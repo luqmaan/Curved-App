@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9192891688D9FA00CDD975 /* UIKit.framework */; };
+		EC91928C1688D9FA00CDD975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928B1688D9FA00CDD975 /* Foundation.framework */; };
+		EC91928E1688D9FA00CDD975 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928D1688D9FA00CDD975 /* CoreGraphics.framework */; };
+		EC9192941688D9FA00CDD975 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC9192921688D9FA00CDD975 /* InfoPlist.strings */; };
+		EC9192961688D9FA00CDD975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9192951688D9FA00CDD975 /* main.m */; };
+		EC91929A1688D9FA00CDD975 /* CurvedAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */; };
+		EC91929C1688D9FA00CDD975 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929B1688D9FA00CDD975 /* Default.png */; };
+		EC91929E1688D9FA00CDD975 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929D1688D9FA00CDD975 /* Default@2x.png */; };
+		EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */; };
+		EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */; };
+		EC9192A61688D9FA00CDD975 /* CurvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9192A51688D9FA00CDD975 /* CurvedViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC9192851688D9FA00CDD975 /* Curved App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Curved App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9192891688D9FA00CDD975 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC91928B1688D9FA00CDD975 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC91928D1688D9FA00CDD975 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC9192911688D9FA00CDD975 /* Curved App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Curved App-Info.plist"; sourceTree = "<group>"; };
+		EC9192931688D9FA00CDD975 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC9192951688D9FA00CDD975 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC9192971688D9FA00CDD975 /* Curved App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Curved App-Prefix.pch"; sourceTree = "<group>"; };
+		EC9192981688D9FA00CDD975 /* CurvedAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurvedAppDelegate.h; sourceTree = "<group>"; };
+		EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurvedAppDelegate.m; sourceTree = "<group>"; };
+		EC91929B1688D9FA00CDD975 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EC91929D1688D9FA00CDD975 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EC9192A21688D9FA00CDD975 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EC9192A41688D9FA00CDD975 /* CurvedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurvedViewController.h; sourceTree = "<group>"; };
+		EC9192A51688D9FA00CDD975 /* CurvedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurvedViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC9192821688D9FA00CDD975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */,
+				EC91928C1688D9FA00CDD975 /* Foundation.framework in Frameworks */,
+				EC91928E1688D9FA00CDD975 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC91927A1688D9F900CDD975 = {
+			isa = PBXGroup;
+			children = (
+				EC91928F1688D9FA00CDD975 /* Curved App */,
+				EC9192881688D9FA00CDD975 /* Frameworks */,
+				EC9192861688D9FA00CDD975 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC9192861688D9FA00CDD975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC9192851688D9FA00CDD975 /* Curved App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC9192881688D9FA00CDD975 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC9192891688D9FA00CDD975 /* UIKit.framework */,
+				EC91928B1688D9FA00CDD975 /* Foundation.framework */,
+				EC91928D1688D9FA00CDD975 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC91928F1688D9FA00CDD975 /* Curved App */ = {
+			isa = PBXGroup;
+			children = (
+				EC9192981688D9FA00CDD975 /* CurvedAppDelegate.h */,
+				EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */,
+				EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */,
+				EC9192A41688D9FA00CDD975 /* CurvedViewController.h */,
+				EC9192A51688D9FA00CDD975 /* CurvedViewController.m */,
+				EC9192901688D9FA00CDD975 /* Supporting Files */,
+			);
+			path = "Curved App";
+			sourceTree = "<group>";
+		};
+		EC9192901688D9FA00CDD975 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC9192911688D9FA00CDD975 /* Curved App-Info.plist */,
+				EC9192921688D9FA00CDD975 /* InfoPlist.strings */,
+				EC9192951688D9FA00CDD975 /* main.m */,
+				EC9192971688D9FA00CDD975 /* Curved App-Prefix.pch */,
+				EC91929B1688D9FA00CDD975 /* Default.png */,
+				EC91929D1688D9FA00CDD975 /* Default@2x.png */,
+				EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC9192841688D9FA00CDD975 /* Curved App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC9192A91688D9FA00CDD975 /* Build configuration list for PBXNativeTarget "Curved App" */;
+			buildPhases = (
+				EC9192811688D9FA00CDD975 /* Sources */,
+				EC9192821688D9FA00CDD975 /* Frameworks */,
+				EC9192831688D9FA00CDD975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Curved App";
+			productName = "Curved App";
+			productReference = EC9192851688D9FA00CDD975 /* Curved App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC91927C1688D9FA00CDD975 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Curved;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Createch;
+			};
+			buildConfigurationList = EC91927F1688D9FA00CDD975 /* Build configuration list for PBXProject "Curved App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC91927A1688D9F900CDD975;
+			productRefGroup = EC9192861688D9FA00CDD975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC9192841688D9FA00CDD975 /* Curved App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC9192831688D9FA00CDD975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9192941688D9FA00CDD975 /* InfoPlist.strings in Resources */,
+				EC91929C1688D9FA00CDD975 /* Default.png in Resources */,
+				EC91929E1688D9FA00CDD975 /* Default@2x.png in Resources */,
+				EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */,
+				EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC9192811688D9FA00CDD975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9192961688D9FA00CDD975 /* main.m in Sources */,
+				EC91929A1688D9FA00CDD975 /* CurvedAppDelegate.m in Sources */,
+				EC9192A61688D9FA00CDD975 /* CurvedViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC9192921688D9FA00CDD975 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC9192931688D9FA00CDD975 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC9192A21688D9FA00CDD975 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC9192A71688D9FA00CDD975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC9192A81688D9FA00CDD975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC9192AA1688D9FA00CDD975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Curved App/Curved App-Prefix.pch";
+				INFOPLIST_FILE = "Curved App/Curved App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC9192AB1688D9FA00CDD975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Curved App/Curved App-Prefix.pch";
+				INFOPLIST_FILE = "Curved App/Curved App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC91927F1688D9FA00CDD975 /* Build configuration list for PBXProject "Curved App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9192A71688D9FA00CDD975 /* Debug */,
+				EC9192A81688D9FA00CDD975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC9192A91688D9FA00CDD975 /* Build configuration list for PBXNativeTarget "Curved App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9192AA1688D9FA00CDD975 /* Debug */,
+				EC9192AB1688D9FA00CDD975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC91927C1688D9FA00CDD975 /* Project object */;
+}
