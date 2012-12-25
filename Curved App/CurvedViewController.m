@@ -11,7 +11,7 @@
 
 @implementation CurvedViewController
 
-    @synthesize imageView, choosePhotoBtn, takePhotoBtn;
+    @synthesize imageView, choosePhotoBtn, getStartedView, step1View;
 
     - (void)viewDidLoad
     {
@@ -33,18 +33,28 @@
         
         picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
         
-        [self presentViewController:picker animated:YES completion:nil];
+        [self presentViewController:picker
+                           animated:YES completion:nil];
         
     }
 
     - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
         
-        [picker dismissViewControllerAnimated:YES completion:nil];
+        [picker dismissViewControllerAnimated:YES
+                                   completion:nil];
+        
+        [self performSegueWithIdentifier:@"step1"
+                                  sender:self];
+
+        
+        for (NSString *key in info) {
+            NSLog(@"%@ -> %@", key, [info objectForKey:key]);
+        }
+        
+        
         imageView.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-    
-}
-
-
+        
+    }
 
 
 @end

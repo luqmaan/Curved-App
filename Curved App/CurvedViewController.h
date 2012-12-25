@@ -16,11 +16,13 @@
     UIButton* takePhotoBtn;
 }
 
-
     @property (nonatomic, retain) IBOutlet UIImageView* imageView;
     @property (nonatomic, retain) IBOutlet UIButton* choosePhotoBtn;
-    @property (nonatomic, retain) IBOutlet UIButton* takePhotoBtn;
+
+@property (strong, nonatomic) IBOutlet UIView *getStartedView;
+@property (strong, nonatomic) IBOutlet UIView *step1View;
 
     - (IBAction) getPhoto:(id)sender;
+//    - (IBAction) switchViews:(id)sender;
 
 @end
