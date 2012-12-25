@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CurvedViewController : UINavigationController
+// @interface CurvedViewController : UINavigationController
+
+@interface CurvedViewController: UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+    UIImageView* imageView;
+    UIButton* choosePhotoBtn;
+    UIButton* takePhotoBtn;
+}
+
+
+    @property (nonatomic, retain) IBOutlet UIImageView* imageView;
+    @property (nonatomic, retain) IBOutlet UIButton* choosePhotoBtn;
+    @property (nonatomic, retain) IBOutlet UIButton* takePhotoBtn;
+
+    - (IBAction) getPhoto:(id)sender;
 
 @end

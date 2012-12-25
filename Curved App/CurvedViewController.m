@@ -8,22 +8,43 @@
 
 #import "CurvedViewController.h"
 
-@interface CurvedViewController ()
-
-@end
 
 @implementation CurvedViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    @synthesize imageView, choosePhotoBtn, takePhotoBtn;
+
+    - (void)viewDidLoad
+    {
+        [super viewDidLoad];
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    - (void)didReceiveMemoryWarning
+    {
+        [super didReceiveMemoryWarning];
+        // Dispose of any resources that can be recreated.
+    }
+
+    - (IBAction) getPhoto:(id)sender {
+        
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+
+        picker.delegate = self;
+        
+        picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        
+        [self presentViewController:picker animated:YES completion:nil];
+        
+    }
+
+    - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+        
+        [picker dismissViewControllerAnimated:YES completion:nil];
+        imageView.image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
 
 @end
