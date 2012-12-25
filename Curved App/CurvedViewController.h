@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CurvedViewController : UIViewController
+@interface CurvedViewController : UINavigationController
 
 @end

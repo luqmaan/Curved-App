@@ -293,6 +293,7 @@
 				EC9192AB1688D9FA00CDD975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
