@@ -57,4 +57,15 @@
     }
 
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"choosePanorama"]) {
+        //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        NSLog(@"self: %@", self);
+        NSLog(@"destination: %@", [segue destinationViewController]);
+        
+    }
+}
+
 @end
