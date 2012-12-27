@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PanoramaFrameViewController : UIViewController
+@interface PanoramaFrameViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 

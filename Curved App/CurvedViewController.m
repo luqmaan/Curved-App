@@ -31,12 +31,6 @@
     if ([segue.identifier isEqualToString:@"choosePanorama"]) {
         //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-        
-        [imagePicker setSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
-        
-       [self presentViewController:imagePicker animated:YES completion:nil];
-        
         NSLog(@"self: %@", self);
         NSLog(@"destination: %@", [segue destinationViewController]);
         
