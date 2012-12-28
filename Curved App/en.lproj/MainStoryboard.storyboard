@@ -4,12 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Curved View Controller-->
+        <!--Curved View Controller - Get Started-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="CurvedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPY-3j-6qb">
@@ -31,53 +31,120 @@
                             <constraint firstItem="aPY-3j-6qb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="84" id="qKf-xo-OKf"/>
                             <constraint firstItem="aPY-3j-6qb" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="v9c-uT-11W"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="j7T-5u-aZM"/>
+                    <navigationItem key="navigationItem" title="Get Started" id="j7T-5u-aZM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461" y="-83"/>
+            <point key="canvasLocation" x="617" y="-83"/>
         </scene>
-        <!--Panorama Frame View Controller-->
+        <!--Panorama Frame View Controller - Choose Frame Color-->
         <scene sceneID="ycF-fX-Qkv">
             <objects>
                 <viewController id="rjm-a1-gsG" customClass="PanoramaFrameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W0g-aX-B4I">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-c8-gBb">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="283" id="0kK-lr-Fzi"/>
-                                    <constraint firstAttribute="width" constant="223" id="p63-N4-N3P"/>
+                                    <constraint firstAttribute="height" constant="165" id="ifD-AN-cpa"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Panorama Frame View" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qYX-Aq-weU">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EGG-RS-zcR">
+                                <segments>
+                                    <segment title="Dark"/>
+                                    <segment title="Light"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EGG-RS-zcR" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="4Ga-pr-kJA"/>
+                            <constraint firstItem="EGG-RS-zcR" firstAttribute="centerX" secondItem="ixl-c8-gBb" secondAttribute="centerX" type="default" id="RUg-Wa-6rZ"/>
+                            <constraint firstItem="ixl-c8-gBb" firstAttribute="leading" secondItem="W0g-aX-B4I" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Rex-Ea-uA5"/>
+                            <constraint firstAttribute="trailing" secondItem="ixl-c8-gBb" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="g9C-Q3-dEs"/>
+                            <constraint firstItem="ixl-c8-gBb" firstAttribute="top" secondItem="W0g-aX-B4I" secondAttribute="top" constant="15" id="wnT-yt-cZ5"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose Frame Color" id="hZU-Ih-3ax">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="3fY-ex-gvC"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="ixl-c8-gBb" id="4TG-25-9yJ"/>
+                        <segue destination="Brf-zs-LRP" kind="push" id="lLC-mr-h4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0C-fU-zJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="-83"/>
+        </scene>
+        <!--View Controller - Confirmation-->
+        <scene sceneID="d2b-Es-KOw">
+            <objects>
+                <viewController id="zNV-nq-MpO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0QX-by-ESV">
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thanks!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfE-Yz-6hi">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lfE-Yz-6hi" firstAttribute="top" secondItem="0QX-by-ESV" secondAttribute="top" constant="117" id="NDt-hg-22A"/>
+                            <constraint firstItem="lfE-Yz-6hi" firstAttribute="centerX" secondItem="0QX-by-ESV" secondAttribute="centerX" type="default" id="qXK-cj-TKY"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confirmation" id="RS3-Oz-YEU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GbN-1r-7q0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2647" y="-83"/>
+        </scene>
+        <!--View Controller - Shipping Information-->
+        <scene sceneID="ppC-Ov-hBA">
+            <objects>
+                <viewController id="Brf-zs-LRP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Acd-uM-hQa">
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shipping Info View" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tHY-JC-n6U">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="qYX-Aq-weU" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="FzD-dq-UDb"/>
-                            <constraint firstItem="ixl-c8-gBb" firstAttribute="top" secondItem="W0g-aX-B4I" secondAttribute="top" constant="132" id="jEN-Xo-RY7"/>
-                            <constraint firstItem="ixl-c8-gBb" firstAttribute="centerX" secondItem="W0g-aX-B4I" secondAttribute="centerX" type="default" id="x1m-Fs-HeX"/>
-                            <constraint firstItem="qYX-Aq-weU" firstAttribute="leading" secondItem="W0g-aX-B4I" secondAttribute="leading" constant="88" id="znR-wf-wNC"/>
+                            <constraint firstItem="tHY-JC-n6U" firstAttribute="centerX" secondItem="Acd-uM-hQa" secondAttribute="centerX" type="default" id="9yJ-kH-ZOm"/>
+                            <constraint firstItem="tHY-JC-n6U" firstAttribute="centerY" secondItem="Acd-uM-hQa" secondAttribute="centerY" type="default" id="cK2-bS-Ro0"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Shipping Information" id="LKv-Gw-ypy">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="tUS-lY-odj"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="imageView" destination="ixl-c8-gBb" id="4TG-25-9yJ"/>
+                        <segue destination="zNV-nq-MpO" kind="push" id="tXO-zT-Pfa"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p0C-fU-zJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14S-tE-6oQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="-83"/>
+            <point key="canvasLocation" x="1973" y="-83"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iul-IA-Nae">
             <objects>
                 <navigationController id="M2c-Om-sxI" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fGM-kb-CEw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -10,19 +10,6 @@
 
 // @interface CurvedViewController : UINavigationController
 
-@interface CurvedViewController: UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
-    UIImageView* imageView;
-    UIButton* choosePhotoBtn;
-    UIButton* takePhotoBtn;
-}
-
-    @property (nonatomic, retain) IBOutlet UIImageView* imageView;
-    @property (nonatomic, retain) IBOutlet UIButton* choosePhotoBtn;
-
-@property (strong, nonatomic) IBOutlet UIView *getStartedView;
-@property (strong, nonatomic) IBOutlet UIView *step1View;
-
-    - (IBAction) getPhoto:(id)sender;
-//    - (IBAction) switchViews:(id)sender;
+@interface CurvedViewController: UIViewController <UINavigationControllerDelegate>
 
 @end
