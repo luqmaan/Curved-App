@@ -12,4 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+- (IBAction)changeFrameColor:(id)sender;
+
 @end

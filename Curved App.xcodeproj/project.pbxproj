@@ -19,6 +19,8 @@
 		EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */; };
 		EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */; };
 		EC9192A61688D9FA00CDD975 /* CurvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9192A51688D9FA00CDD975 /* CurvedViewController.m */; };
+		ECE2194E168D441400988388 /* ShippingInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2194D168D441400988388 /* ShippingInformationViewController.m */; };
+		ECE21952168D47F200988388 /* 41-cent-flag-stamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECE21951168D47F200988388 /* 41-cent-flag-stamp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		EC9192A21688D9FA00CDD975 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EC9192A41688D9FA00CDD975 /* CurvedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurvedViewController.h; sourceTree = "<group>"; };
 		EC9192A51688D9FA00CDD975 /* CurvedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurvedViewController.m; sourceTree = "<group>"; };
+		ECE2194C168D441400988388 /* ShippingInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippingInformationViewController.h; sourceTree = "<group>"; };
+		ECE2194D168D441400988388 /* ShippingInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippingInformationViewController.m; sourceTree = "<group>"; };
+		ECE21951168D47F200988388 /* 41-cent-flag-stamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "41-cent-flag-stamp.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +91,15 @@
 		EC91928F1688D9FA00CDD975 /* Curved App */ = {
 			isa = PBXGroup;
 			children = (
+				ECE21950168D47F200988388 /* images */,
 				EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */,
 				EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */,
 				EC9192981688D9FA00CDD975 /* CurvedAppDelegate.h */,
 				EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */,
 				EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */,
 				EC9192A41688D9FA00CDD975 /* CurvedViewController.h */,
+				ECE2194C168D441400988388 /* ShippingInformationViewController.h */,
+				ECE2194D168D441400988388 /* ShippingInformationViewController.m */,
 				EC9192A51688D9FA00CDD975 /* CurvedViewController.m */,
 				EC9192901688D9FA00CDD975 /* Supporting Files */,
 			);
@@ -110,6 +118,14 @@
 				EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECE21950168D47F200988388 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ECE21951168D47F200988388 /* 41-cent-flag-stamp.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +185,7 @@
 				EC91929E1688D9FA00CDD975 /* Default@2x.png in Resources */,
 				EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */,
 				EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */,
+				ECE21952168D47F200988388 /* 41-cent-flag-stamp.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +200,7 @@
 				EC91929A1688D9FA00CDD975 /* CurvedAppDelegate.m in Sources */,
 				EC9192A61688D9FA00CDD975 /* CurvedViewController.m in Sources */,
 				EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */,
+				ECE2194E168D441400988388 /* ShippingInformationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

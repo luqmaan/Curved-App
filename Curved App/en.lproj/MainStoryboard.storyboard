@@ -54,9 +54,12 @@
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EGG-RS-zcR">
                                 <segments>
-                                    <segment title="Dark"/>
                                     <segment title="Light"/>
+                                    <segment title="Dark"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeFrameColor:" destination="rjm-a1-gsG" eventType="valueChanged" id="fmz-pF-Yhx"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -70,11 +73,14 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Choose Frame Color" id="hZU-Ih-3ax">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="3fY-ex-gvC"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="3fY-ex-gvC">
+                            <connections>
+                                <segue destination="Brf-zs-LRP" kind="push" id="7tb-GS-kR6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="ixl-c8-gBb" id="4TG-25-9yJ"/>
-                        <segue destination="Brf-zs-LRP" kind="push" id="lLC-mr-h4R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0C-fU-zJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,31 +114,88 @@
             </objects>
             <point key="canvasLocation" x="2647" y="-83"/>
         </scene>
-        <!--View Controller - Shipping Information-->
+        <!--Shipping Information View Controller - Shipping Information-->
         <scene sceneID="ppC-Ov-hBA">
             <objects>
-                <viewController id="Brf-zs-LRP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Acd-uM-hQa">
+                <viewController id="Brf-zs-LRP" customClass="ShippingInformationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Acd-uM-hQa" customClass="S">
                         <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shipping Info View" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tHY-JC-n6U">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49F-pe-jum">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="54N-fv-5se"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4np-PW-ndm">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-6Q-Ibm">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSK-QX-x0B">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Gef-jl-bTe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y3l-Py-N8C">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jPm-yQ-N3Z">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="41-cent-flag-stamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZIr-0B-f0m">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="K4i-Om-aXz"/>
+                                    <constraint firstAttribute="height" constant="99" id="mOF-R5-p5X"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tHY-JC-n6U" firstAttribute="centerX" secondItem="Acd-uM-hQa" secondAttribute="centerX" type="default" id="9yJ-kH-ZOm"/>
-                            <constraint firstItem="tHY-JC-n6U" firstAttribute="centerY" secondItem="Acd-uM-hQa" secondAttribute="centerY" type="default" id="cK2-bS-Ro0"/>
+                            <constraint firstItem="y3l-Py-N8C" firstAttribute="centerY" secondItem="Acd-uM-hQa" secondAttribute="centerY" type="default" id="1wI-D7-FmI"/>
+                            <constraint firstItem="y3l-Py-N8C" firstAttribute="trailing" secondItem="KSK-QX-x0B" secondAttribute="trailing" type="default" id="3Uq-QG-WqY"/>
+                            <constraint firstItem="jPm-yQ-N3Z" firstAttribute="top" secondItem="y3l-Py-N8C" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3bM-Oh-qS0"/>
+                            <constraint firstItem="jPm-yQ-N3Z" firstAttribute="trailing" secondItem="y3l-Py-N8C" secondAttribute="trailing" type="default" id="5Jl-gi-qti"/>
+                            <constraint firstItem="4np-PW-ndm" firstAttribute="top" secondItem="49F-pe-jum" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6hF-Se-AcZ"/>
+                            <constraint firstItem="KSK-QX-x0B" firstAttribute="centerX" secondItem="Acd-uM-hQa" secondAttribute="centerX" type="default" id="9fu-Gw-hKU"/>
+                            <constraint firstItem="4np-PW-ndm" firstAttribute="trailing" secondItem="WQ8-6Q-Ibm" secondAttribute="trailing" type="default" id="Air-3P-Ezz"/>
+                            <constraint firstAttribute="trailing" secondItem="ZIr-0B-f0m" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="BUf-KN-65t"/>
+                            <constraint firstItem="y3l-Py-N8C" firstAttribute="top" secondItem="KSK-QX-x0B" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="KgM-Lm-iBb"/>
+                            <constraint firstItem="49F-pe-jum" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="OIc-nB-p6f"/>
+                            <constraint firstItem="WQ8-6Q-Ibm" firstAttribute="top" secondItem="4np-PW-ndm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="PMo-g9-u5i"/>
+                            <constraint firstItem="49F-pe-jum" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Pu3-MB-1OR"/>
+                            <constraint firstItem="y3l-Py-N8C" firstAttribute="leading" secondItem="KSK-QX-x0B" secondAttribute="leading" type="default" id="Uc9-4a-zFe"/>
+                            <constraint firstItem="ZIr-0B-f0m" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Wpw-C0-va4"/>
+                            <constraint firstItem="WQ8-6Q-Ibm" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aH9-I6-FhG"/>
+                            <constraint firstItem="49F-pe-jum" firstAttribute="trailing" secondItem="4np-PW-ndm" secondAttribute="trailing" type="default" id="cFb-9W-6Kh"/>
+                            <constraint firstItem="4np-PW-ndm" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mij-W8-ESv"/>
+                            <constraint firstItem="jPm-yQ-N3Z" firstAttribute="leading" secondItem="y3l-Py-N8C" secondAttribute="leading" type="default" id="pPM-Vc-DwQ"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Shipping Information" id="LKv-Gw-ypy">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="tUS-lY-odj"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="tUS-lY-odj">
+                            <connections>
+                                <segue destination="zNV-nq-MpO" kind="push" id="5yS-wo-Kei"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="zNV-nq-MpO" kind="push" id="tXO-zT-Pfa"/>
+                        <outlet property="recipientAddress1" destination="y3l-Py-N8C" id="NTE-KX-oI6"/>
+                        <outlet property="recipientAddress2" destination="jPm-yQ-N3Z" id="vBe-PP-M01"/>
+                        <outlet property="recipientName" destination="KSK-QX-x0B" id="Jat-nQ-qEU"/>
+                        <outlet property="returnAddress1" destination="4np-PW-ndm" id="GNr-Me-GHh"/>
+                        <outlet property="returnAddress2" destination="WQ8-6Q-Ibm" id="Net-U8-OVQ"/>
+                        <outlet property="returnName" destination="49F-pe-jum" id="aXg-nf-knS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14S-tE-6oQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -159,6 +222,9 @@
             <point key="canvasLocation" x="-65" y="-83"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="41-cent-flag-stamp.jpg" width="300" height="317"/>
+    </resources>
     <classes>
         <class className="CurvedViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CurvedViewController.h"/>
@@ -169,7 +235,18 @@
         <class className="PanoramaFrameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PanoramaFrameViewController.h"/>
             <relationships>
+                <relationship kind="action" name="changeFrameColor:"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ShippingInformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShippingInformationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="recipientAddress1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="recipientName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="returnAddress1" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="returnAddress2" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="returnName" candidateClass="UITextField"/>
             </relationships>
         </class>
     </classes>

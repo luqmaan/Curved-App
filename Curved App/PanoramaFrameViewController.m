@@ -63,4 +63,25 @@
     
 }
 
+- (IBAction)changeFrameColor:(UISegmentedControl *)segment {
+
+    NSLog(@"%d", segment.selectedSegmentIndex);
+    
+    UIColor *color = [[UIColor alloc] init];
+    
+    switch (segment.selectedSegmentIndex) {
+        case 0:
+            color = [UIColor whiteColor];
+            break;
+        case 1: default:
+            color = [UIColor grayColor];
+            break;
+    }
+
+    [[self view] setBackgroundColor:color];
+
+
+}
+
+
 @end
