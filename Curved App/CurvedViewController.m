@@ -26,4 +26,50 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pickimage:(id)sender {
+}
+
+- (IBAction)chooseImage:(id)sender {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    
+    [picker setSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
+    
+    [picker setDelegate:self];
+    
+    [self presentViewController:picker animated:YES completion:nil];
+    
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"oiwjefoiwejf");
+        
+        UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+        
+        NSLog(@"%g", image.size.height);
+        
+        [self displayEditorForImage:image];
+        
+        
+    }];
+}
+
+- (void)displayEditorForImage:(UIImage *)imageToEdit
+{
+    AFPhotoEditorController *editorController = [[AFPhotoEditorController alloc] initWithImage:imageToEdit];
+    [editorController setDelegate:self];
+    [self presentViewController:editorController animated:YES completion:nil];
+}
+
+- (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
+{
+    // Handle the result image here
+}
+
+- (void)photoEditorCanceled:(AFPhotoEditorController *)editor
+{
+    // Handle cancelation here
+}
 @end

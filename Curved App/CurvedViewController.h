@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AFPhotoEditorController.h"
 
-@interface CurvedViewController : UIViewController
+@interface CurvedViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, AFPhotoEditorControllerDelegate>
+
+- (IBAction)chooseImage:(id)sender;
 
 @end
+
+
