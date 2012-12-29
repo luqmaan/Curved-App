@@ -309,6 +309,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="fromBtn" destination="l9T-jR-Bc9" id="92Q-ob-n2G"/>
+                        <outlet property="messageTxt" destination="j7M-sM-4g9" id="ZU2-hu-oIs"/>
+                        <outlet property="toBtn" destination="gBl-EL-and" id="bZr-9a-lwd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14S-tE-6oQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,12 +365,9 @@
         <class className="ShippingInformationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ShippingInformationViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="recipientAddress1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="recipientAddress2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="recipientName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="returnAddress1" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="returnAddress2" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="returnName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="fromBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="messageTxt" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="toBtn" candidateClass="UIButton"/>
             </relationships>
         </class>
     </classes>
@@ -375,6 +377,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="9WH-mB-FPY"/>
+        <segue reference="C4F-Qe-fuU"/>
     </inferredMetricsTieBreakers>
 </document>
