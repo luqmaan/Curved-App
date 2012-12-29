@@ -135,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC9192A91688D9FA00CDD975 /* Build configuration list for PBXNativeTarget "Curved App" */;
 			buildPhases = (
+				30A02348168E9E3D009EC249 /* ShellScript */,
 				EC9192811688D9FA00CDD975 /* Sources */,
 				EC9192821688D9FA00CDD975 /* Frameworks */,
 				EC9192831688D9FA00CDD975 /* Resources */,
@@ -190,6 +191,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30A02348168E9E3D009EC249 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((0x$bN))\nbN=$(($bN + 1))\nbN=$(printf \"%X\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC9192811688D9FA00CDD975 /* Sources */ = {
@@ -282,6 +299,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Curved App/Curved App-Prefix.pch";
 				INFOPLIST_FILE = "Curved App/Curved App-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +311,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Curved App/Curved App-Prefix.pch";
 				INFOPLIST_FILE = "Curved App/Curved App-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
