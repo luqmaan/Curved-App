@@ -58,7 +58,10 @@
 {
     [self dismissViewControllerAnimated:YES completion:^{
         UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-        [[self imageView] setImage:image];
+        
+        
+        [self displayEditorForImage:image];
+        
     }];
     
 }
@@ -94,5 +97,37 @@
 
 }
 
+
+
+- (void)displayEditorForImage:(UIImage *)imageToEdit
+{
+    
+    NSArray *tools = [[NSArray alloc] initWithObjects:@"editor.tool.crop", nil];
+    [AFPhotoEditorCustomization setOptionValue:tools forKey:@"editor.toolOrder"];
+    
+    [AFPhotoEditorCustomization setOptionValue:[UIColor redColor] forKey:@"editor.accentColor"];
+    AFPhotoEditorController *editorController = [[AFPhotoEditorController alloc] initWithImage:imageToEdit];
+    
+    [editorController setDelegate:self];
+    
+    [self presentViewController:editorController animated:YES completion:nil];
+}
+
+
+- (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [[self imageView] setImage:image];
+    // Handle the result image here
+}
+
+- (void)photoEditorCanceled:(AFPhotoEditorController *)editor
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self openImagePicker];
+    }];
+    // Handle cancelation here
+}
 
 @end
