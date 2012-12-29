@@ -70,11 +70,14 @@
     UIColor *color = [[UIColor alloc] init];
     
     switch (segment.selectedSegmentIndex) {
-        case 0:
+        case 0: default:
+            color = [UIColor clearColor];
+            break;
+        case 1:
             color = [UIColor whiteColor];
             break;
-        case 1: default:
-            color = [UIColor grayColor];
+        case 2:
+            color = [UIColor blackColor];
             break;
     }
 

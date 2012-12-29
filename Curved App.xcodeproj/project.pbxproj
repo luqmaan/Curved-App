@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A0234B168EA00B009EC249 /* MainMenuViewController.m */; };
 		EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */; };
 		EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9192891688D9FA00CDD975 /* UIKit.framework */; };
 		EC91928C1688D9FA00CDD975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928B1688D9FA00CDD975 /* Foundation.framework */; };
@@ -18,12 +19,12 @@
 		EC91929E1688D9FA00CDD975 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929D1688D9FA00CDD975 /* Default@2x.png */; };
 		EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */; };
 		EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */; };
-		EC9192A61688D9FA00CDD975 /* CurvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9192A51688D9FA00CDD975 /* CurvedViewController.m */; };
 		ECE2194E168D441400988388 /* ShippingInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2194D168D441400988388 /* ShippingInformationViewController.m */; };
-		ECE21952168D47F200988388 /* 41-cent-flag-stamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECE21951168D47F200988388 /* 41-cent-flag-stamp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30A0234A168EA00B009EC249 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		30A0234B168EA00B009EC249 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramaFrameViewController.h; sourceTree = "<group>"; };
 		EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaFrameViewController.m; sourceTree = "<group>"; };
 		EC9192851688D9FA00CDD975 /* Curved App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Curved App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,15 +37,12 @@
 		EC9192971688D9FA00CDD975 /* Curved App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Curved App-Prefix.pch"; sourceTree = "<group>"; };
 		EC9192981688D9FA00CDD975 /* CurvedAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurvedAppDelegate.h; sourceTree = "<group>"; };
 		EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurvedAppDelegate.m; sourceTree = "<group>"; };
-		EC91929B1688D9FA00CDD975 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		EC91929D1688D9FA00CDD975 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EC91929B1688D9FA00CDD975 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		EC91929D1688D9FA00CDD975 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC9192A21688D9FA00CDD975 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		EC9192A41688D9FA00CDD975 /* CurvedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurvedViewController.h; sourceTree = "<group>"; };
-		EC9192A51688D9FA00CDD975 /* CurvedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurvedViewController.m; sourceTree = "<group>"; };
 		ECE2194C168D441400988388 /* ShippingInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippingInformationViewController.h; sourceTree = "<group>"; };
 		ECE2194D168D441400988388 /* ShippingInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippingInformationViewController.m; sourceTree = "<group>"; };
-		ECE21951168D47F200988388 /* 41-cent-flag-stamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "41-cent-flag-stamp.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30A0234D168EA016009EC249 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30A0234A168EA00B009EC249 /* MainMenuViewController.h */,
+				30A0234B168EA00B009EC249 /* MainMenuViewController.m */,
+				EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */,
+				EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */,
+				ECE2194C168D441400988388 /* ShippingInformationViewController.h */,
+				ECE2194D168D441400988388 /* ShippingInformationViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		EC91927A1688D9F900CDD975 = {
 			isa = PBXGroup;
 			children = (
@@ -91,16 +102,10 @@
 		EC91928F1688D9FA00CDD975 /* Curved App */ = {
 			isa = PBXGroup;
 			children = (
-				ECE21950168D47F200988388 /* images */,
-				EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */,
-				EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */,
+				EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */,
 				EC9192981688D9FA00CDD975 /* CurvedAppDelegate.h */,
 				EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */,
-				EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */,
-				EC9192A41688D9FA00CDD975 /* CurvedViewController.h */,
-				ECE2194C168D441400988388 /* ShippingInformationViewController.h */,
-				ECE2194D168D441400988388 /* ShippingInformationViewController.m */,
-				EC9192A51688D9FA00CDD975 /* CurvedViewController.m */,
+				30A0234D168EA016009EC249 /* View Controllers */,
 				EC9192901688D9FA00CDD975 /* Supporting Files */,
 			);
 			path = "Curved App";
@@ -109,22 +114,23 @@
 		EC9192901688D9FA00CDD975 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ECE21950168D47F200988388 /* Graphics */,
 				EC9192911688D9FA00CDD975 /* Curved App-Info.plist */,
 				EC9192921688D9FA00CDD975 /* InfoPlist.strings */,
 				EC9192951688D9FA00CDD975 /* main.m */,
 				EC9192971688D9FA00CDD975 /* Curved App-Prefix.pch */,
-				EC91929B1688D9FA00CDD975 /* Default.png */,
-				EC91929D1688D9FA00CDD975 /* Default@2x.png */,
-				EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		ECE21950168D47F200988388 /* images */ = {
+		ECE21950168D47F200988388 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				ECE21951168D47F200988388 /* 41-cent-flag-stamp.jpg */,
+				EC91929B1688D9FA00CDD975 /* Default.png */,
+				EC91929D1688D9FA00CDD975 /* Default@2x.png */,
+				EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */,
 			);
+			name = Graphics;
 			path = images;
 			sourceTree = "<group>";
 		};
@@ -186,7 +192,6 @@
 				EC91929E1688D9FA00CDD975 /* Default@2x.png in Resources */,
 				EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */,
 				EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */,
-				ECE21952168D47F200988388 /* 41-cent-flag-stamp.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +220,9 @@
 			files = (
 				EC9192961688D9FA00CDD975 /* main.m in Sources */,
 				EC91929A1688D9FA00CDD975 /* CurvedAppDelegate.m in Sources */,
-				EC9192A61688D9FA00CDD975 /* CurvedViewController.m in Sources */,
 				EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */,
 				ECE2194E168D441400988388 /* ShippingInformationViewController.m in Sources */,
+				30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
