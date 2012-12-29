@@ -160,7 +160,7 @@
             </objects>
             <point key="canvasLocation" x="2632" y="-83"/>
         </scene>
-        <!--View Controller - Confirmation-->
+        <!--View Controller - Thank You-->
         <scene sceneID="d2b-Es-KOw">
             <objects>
                 <viewController id="zNV-nq-MpO" sceneMemberID="viewController">
@@ -181,7 +181,9 @@
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Confirmation" id="RS3-Oz-YEU"/>
+                    <navigationItem key="navigationItem" title="Thank You" id="RS3-Oz-YEU">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="HKW-J7-b5j"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbN-1r-7q0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
