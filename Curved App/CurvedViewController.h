@@ -13,6 +13,10 @@
 
 - (IBAction)chooseImage:(id)sender;
 
+- (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image;
+
+- (void)photoEditorCanceled:(AFPhotoEditorController *)editor;
+
 @end
 
 
