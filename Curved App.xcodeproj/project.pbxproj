@@ -18,6 +18,16 @@
 		EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */; };
 		EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */; };
 		EC9192A61688D9FA00CDD975 /* CurvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9192A51688D9FA00CDD975 /* CurvedViewController.m */; };
+		ECE219A4168F6F9D00988388 /* libAviarySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219A1168F6F9D00988388 /* libAviarySDK.a */; };
+		ECE219A5168F6F9D00988388 /* AviarySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECE219A3168F6F9D00988388 /* AviarySDKResources.bundle */; };
+		ECE219A7168F71A200988388 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219A6168F71A200988388 /* Accelerate.framework */; };
+		ECE219A9168F71A700988388 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219A8168F71A700988388 /* CoreData.framework */; };
+		ECE219AB168F71BA00988388 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219AA168F71BA00988388 /* libz.1.2.5.dylib */; };
+		ECE219AD168F71C200988388 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219AC168F71C200988388 /* libsqlite3.0.dylib */; };
+		ECE219AF168F71CA00988388 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219AE168F71CA00988388 /* QuartzCore.framework */; };
+		ECE219B1168F71D000988388 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219B0168F71D000988388 /* StoreKit.framework */; };
+		ECE219B3168F71D800988388 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219B2168F71D800988388 /* CoreText.framework */; };
+		ECE219B5168F71DF00988388 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE219B4168F71DF00988388 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,22 @@
 		EC9192A21688D9FA00CDD975 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EC9192A41688D9FA00CDD975 /* CurvedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurvedViewController.h; sourceTree = "<group>"; };
 		EC9192A51688D9FA00CDD975 /* CurvedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurvedViewController.m; sourceTree = "<group>"; };
+		ECE2199B168F6F9D00988388 /* AFPhotoEditorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorContext.h; sourceTree = "<group>"; };
+		ECE2199C168F6F9D00988388 /* AFPhotoEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorController.h; sourceTree = "<group>"; };
+		ECE2199D168F6F9D00988388 /* AFPhotoEditorControllerOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorControllerOptions.h; sourceTree = "<group>"; };
+		ECE2199E168F6F9D00988388 /* AFPhotoEditorCustomization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorCustomization.h; sourceTree = "<group>"; };
+		ECE2199F168F6F9D00988388 /* AFPhotoEditorSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorSession.h; sourceTree = "<group>"; };
+		ECE219A0168F6F9D00988388 /* AFPhotoEditorStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorStyle.h; sourceTree = "<group>"; };
+		ECE219A1168F6F9D00988388 /* libAviarySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviarySDK.a; sourceTree = "<group>"; };
+		ECE219A3168F6F9D00988388 /* AviarySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AviarySDKResources.bundle; sourceTree = "<group>"; };
+		ECE219A6168F71A200988388 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		ECE219A8168F71A700988388 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ECE219AA168F71BA00988388 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		ECE219AC168F71C200988388 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		ECE219AE168F71CA00988388 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ECE219B0168F71D000988388 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		ECE219B2168F71D800988388 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		ECE219B4168F71DF00988388 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +70,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE219B5168F71DF00988388 /* OpenGLES.framework in Frameworks */,
+				ECE219B3168F71D800988388 /* CoreText.framework in Frameworks */,
+				ECE219B1168F71D000988388 /* StoreKit.framework in Frameworks */,
+				ECE219AF168F71CA00988388 /* QuartzCore.framework in Frameworks */,
+				ECE219AD168F71C200988388 /* libsqlite3.0.dylib in Frameworks */,
+				ECE219AB168F71BA00988388 /* libz.1.2.5.dylib in Frameworks */,
+				ECE219A9168F71A700988388 /* CoreData.framework in Frameworks */,
+				ECE219A7168F71A200988388 /* Accelerate.framework in Frameworks */,
 				EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */,
 				EC91928C1688D9FA00CDD975 /* Foundation.framework in Frameworks */,
 				EC91928E1688D9FA00CDD975 /* CoreGraphics.framework in Frameworks */,
+				ECE219A4168F6F9D00988388 /* libAviarySDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +91,14 @@
 		EC91927A1688D9F900CDD975 = {
 			isa = PBXGroup;
 			children = (
+				ECE219B4168F71DF00988388 /* OpenGLES.framework */,
+				ECE219B2168F71D800988388 /* CoreText.framework */,
+				ECE219B0168F71D000988388 /* StoreKit.framework */,
+				ECE219AE168F71CA00988388 /* QuartzCore.framework */,
+				ECE219AC168F71C200988388 /* libsqlite3.0.dylib */,
+				ECE219AA168F71BA00988388 /* libz.1.2.5.dylib */,
+				ECE219A8168F71A700988388 /* CoreData.framework */,
+				ECE219A6168F71A200988388 /* Accelerate.framework */,
 				EC91928F1688D9FA00CDD975 /* Curved App */,
 				EC9192881688D9FA00CDD975 /* Frameworks */,
 				EC9192861688D9FA00CDD975 /* Products */,
@@ -83,6 +126,7 @@
 		EC91928F1688D9FA00CDD975 /* Curved App */ = {
 			isa = PBXGroup;
 			children = (
+				ECE21999168F6F9D00988388 /* AviarySDK */,
 				EC9192981688D9FA00CDD975 /* CurvedAppDelegate.h */,
 				EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */,
 				EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */,
@@ -105,6 +149,37 @@
 				EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECE21999168F6F9D00988388 /* AviarySDK */ = {
+			isa = PBXGroup;
+			children = (
+				ECE2199A168F6F9D00988388 /* Headers */,
+				ECE219A1168F6F9D00988388 /* libAviarySDK.a */,
+				ECE219A2168F6F9D00988388 /* Resources */,
+			);
+			path = AviarySDK;
+			sourceTree = "<group>";
+		};
+		ECE2199A168F6F9D00988388 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				ECE2199B168F6F9D00988388 /* AFPhotoEditorContext.h */,
+				ECE2199C168F6F9D00988388 /* AFPhotoEditorController.h */,
+				ECE2199D168F6F9D00988388 /* AFPhotoEditorControllerOptions.h */,
+				ECE2199E168F6F9D00988388 /* AFPhotoEditorCustomization.h */,
+				ECE2199F168F6F9D00988388 /* AFPhotoEditorSession.h */,
+				ECE219A0168F6F9D00988388 /* AFPhotoEditorStyle.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		ECE219A2168F6F9D00988388 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECE219A3168F6F9D00988388 /* AviarySDKResources.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +239,7 @@
 				EC91929E1688D9FA00CDD975 /* Default@2x.png in Resources */,
 				EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */,
 				EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */,
+				ECE219A5168F6F9D00988388 /* AviarySDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +334,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Curved App/Curved App-Prefix.pch";
 				INFOPLIST_FILE = "Curved App/Curved App-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Curved App/AviarySDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-fobjc-arc\n",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +354,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Curved App/Curved App-Prefix.pch";
 				INFOPLIST_FILE = "Curved App/Curved App-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Curved App/AviarySDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-fobjc-arc\n",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +387,7 @@
 				EC9192AB1688D9FA00CDD975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
