@@ -63,6 +63,14 @@
     
 }
 
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:^
+    {
+        [[self navigationController] popViewControllerAnimated:YES];
+    }];
+}
+
 - (IBAction)changeFrameColor:(UISegmentedControl *)segment {
 
     NSLog(@"%d", segment.selectedSegmentIndex);
