@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="1316" y="-83"/>
         </scene>
-        <!--View Controller - Checkout-->
+        <!--Checkout View Controller - Checkout-->
         <scene sceneID="7iv-02-hj8">
             <objects>
-                <viewController id="A8V-TN-Msm" sceneMemberID="viewController">
+                <viewController id="A8V-TN-Msm" customClass="CheckoutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBe-62-PTs">
                         <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,6 +142,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zmy-85-Waw" kind="push" id="17B-qT-Fde"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -160,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="2632" y="-83"/>
         </scene>
-        <!--View Controller - Thank You-->
+        <!--Gracias View Controller - Thank You-->
         <scene sceneID="d2b-Es-KOw">
             <objects>
-                <viewController id="zNV-nq-MpO" sceneMemberID="viewController">
+                <viewController id="zNV-nq-MpO" customClass="GraciasViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0QX-by-ESV">
                         <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -187,7 +190,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbN-1r-7q0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3299" y="-83"/>
+            <point key="canvasLocation" x="4097" y="-83"/>
+        </scene>
+        <!--New Card View Controller - New Card-->
+        <scene sceneID="SFN-3n-idr">
+            <objects>
+                <viewController id="zmy-85-Waw" customClass="NewCardViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NAI-Co-V5B">
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nid-fN-CCD">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Shut up and take my money">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zNV-nq-MpO" kind="push" id="9WH-mB-FPY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nid-fN-CCD" firstAttribute="top" secondItem="NAI-Co-V5B" secondAttribute="top" constant="106" id="Abi-0B-Mr3"/>
+                            <constraint firstItem="Nid-fN-CCD" firstAttribute="centerX" secondItem="NAI-Co-V5B" secondAttribute="centerX" type="default" id="JFf-8L-hT3"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Card" id="9nj-m9-Slx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zJ-d2-Vmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3367" y="169"/>
         </scene>
         <!--Shipping Information View Controller - Personalize-->
         <scene sceneID="ppC-Ov-hBA">
@@ -297,11 +335,20 @@
         </scene>
     </scenes>
     <classes>
+        <class className="CheckoutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CheckoutViewController.h"/>
+        </class>
+        <class className="GraciasViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GraciasViewController.h"/>
+        </class>
         <class className="MainMenuViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NewCardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewCardViewController.h"/>
         </class>
         <class className="PanoramaFrameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PanoramaFrameViewController.h"/>
@@ -327,4 +374,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="9WH-mB-FPY"/>
+    </inferredMetricsTieBreakers>
 </document>

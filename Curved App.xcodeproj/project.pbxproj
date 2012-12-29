@@ -13,6 +13,7 @@
 		30A4C6A2168F3CE3000D8DB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30A4C69F168F3CE3000D8DB6 /* Default-568h@2x.png */; };
 		30A4C6A3168F3CE3000D8DB6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 30A4C6A0168F3CE3000D8DB6 /* Default.png */; };
 		30A4C6A4168F3CE3000D8DB6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30A4C6A1168F3CE3000D8DB6 /* Default@2x.png */; };
+		30A4C6A7168F3EE5000D8DB6 /* NewCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A4C6A6168F3EE5000D8DB6 /* NewCardViewController.m */; };
 		EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */; };
 		EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9192891688D9FA00CDD975 /* UIKit.framework */; };
 		EC91928C1688D9FA00CDD975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928B1688D9FA00CDD975 /* Foundation.framework */; };
@@ -34,6 +35,8 @@
 		30A4C69F168F3CE3000D8DB6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Curved App/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		30A4C6A0168F3CE3000D8DB6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Curved App/Default.png"; sourceTree = SOURCE_ROOT; };
 		30A4C6A1168F3CE3000D8DB6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Curved App/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		30A4C6A5168F3EE5000D8DB6 /* NewCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCardViewController.h; sourceTree = "<group>"; };
+		30A4C6A6168F3EE5000D8DB6 /* NewCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCardViewController.m; sourceTree = "<group>"; };
 		EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramaFrameViewController.h; sourceTree = "<group>"; };
 		EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaFrameViewController.m; sourceTree = "<group>"; };
 		EC9192851688D9FA00CDD975 /* Curved App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Curved App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +79,8 @@
 				ECE2194D168D441400988388 /* ShippingInformationViewController.m */,
 				308BC69B168F394600BBE793 /* CheckoutViewController.h */,
 				308BC69C168F394600BBE793 /* CheckoutViewController.m */,
+				30A4C6A5168F3EE5000D8DB6 /* NewCardViewController.h */,
+				30A4C6A6168F3EE5000D8DB6 /* NewCardViewController.m */,
 				308BC69F168F396700BBE793 /* GraciasViewController.h */,
 				308BC6A0168F396700BBE793 /* GraciasViewController.m */,
 			);
@@ -235,6 +240,7 @@
 				30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */,
 				308BC69D168F394600BBE793 /* CheckoutViewController.m in Sources */,
 				308BC6A1168F396700BBE793 /* GraciasViewController.m in Sources */,
+				30A4C6A7168F3EE5000D8DB6 /* NewCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
