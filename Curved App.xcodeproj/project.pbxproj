@@ -10,6 +10,9 @@
 		308BC69D168F394600BBE793 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308BC69C168F394600BBE793 /* CheckoutViewController.m */; };
 		308BC6A1168F396700BBE793 /* GraciasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308BC6A0168F396700BBE793 /* GraciasViewController.m */; };
 		30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A0234B168EA00B009EC249 /* MainMenuViewController.m */; };
+		30A4C6A2168F3CE3000D8DB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30A4C69F168F3CE3000D8DB6 /* Default-568h@2x.png */; };
+		30A4C6A3168F3CE3000D8DB6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 30A4C6A0168F3CE3000D8DB6 /* Default.png */; };
+		30A4C6A4168F3CE3000D8DB6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30A4C6A1168F3CE3000D8DB6 /* Default@2x.png */; };
 		EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */; };
 		EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9192891688D9FA00CDD975 /* UIKit.framework */; };
 		EC91928C1688D9FA00CDD975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928B1688D9FA00CDD975 /* Foundation.framework */; };
@@ -17,9 +20,6 @@
 		EC9192941688D9FA00CDD975 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC9192921688D9FA00CDD975 /* InfoPlist.strings */; };
 		EC9192961688D9FA00CDD975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9192951688D9FA00CDD975 /* main.m */; };
 		EC91929A1688D9FA00CDD975 /* CurvedAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */; };
-		EC91929C1688D9FA00CDD975 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929B1688D9FA00CDD975 /* Default.png */; };
-		EC91929E1688D9FA00CDD975 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929D1688D9FA00CDD975 /* Default@2x.png */; };
-		EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */; };
 		EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9192A11688D9FA00CDD975 /* MainStoryboard.storyboard */; };
 		ECE2194E168D441400988388 /* ShippingInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2194D168D441400988388 /* ShippingInformationViewController.m */; };
 /* End PBXBuildFile section */
@@ -31,6 +31,9 @@
 		308BC6A0168F396700BBE793 /* GraciasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraciasViewController.m; sourceTree = "<group>"; };
 		30A0234A168EA00B009EC249 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		30A0234B168EA00B009EC249 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		30A4C69F168F3CE3000D8DB6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Curved App/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		30A4C6A0168F3CE3000D8DB6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Curved App/Default.png"; sourceTree = SOURCE_ROOT; };
+		30A4C6A1168F3CE3000D8DB6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Curved App/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramaFrameViewController.h; sourceTree = "<group>"; };
 		EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaFrameViewController.m; sourceTree = "<group>"; };
 		EC9192851688D9FA00CDD975 /* Curved App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Curved App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +46,6 @@
 		EC9192971688D9FA00CDD975 /* Curved App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Curved App-Prefix.pch"; sourceTree = "<group>"; };
 		EC9192981688D9FA00CDD975 /* CurvedAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurvedAppDelegate.h; sourceTree = "<group>"; };
 		EC9192991688D9FA00CDD975 /* CurvedAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurvedAppDelegate.m; sourceTree = "<group>"; };
-		EC91929B1688D9FA00CDD975 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		EC91929D1688D9FA00CDD975 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
-		EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC9192A21688D9FA00CDD975 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		ECE2194C168D441400988388 /* ShippingInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippingInformationViewController.h; sourceTree = "<group>"; };
 		ECE2194D168D441400988388 /* ShippingInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippingInformationViewController.m; sourceTree = "<group>"; };
@@ -136,9 +136,9 @@
 		ECE21950168D47F200988388 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				EC91929B1688D9FA00CDD975 /* Default.png */,
-				EC91929D1688D9FA00CDD975 /* Default@2x.png */,
-				EC91929F1688D9FA00CDD975 /* Default-568h@2x.png */,
+				30A4C69F168F3CE3000D8DB6 /* Default-568h@2x.png */,
+				30A4C6A0168F3CE3000D8DB6 /* Default.png */,
+				30A4C6A1168F3CE3000D8DB6 /* Default@2x.png */,
 			);
 			name = Graphics;
 			path = images;
@@ -198,10 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9192941688D9FA00CDD975 /* InfoPlist.strings in Resources */,
-				EC91929C1688D9FA00CDD975 /* Default.png in Resources */,
-				EC91929E1688D9FA00CDD975 /* Default@2x.png in Resources */,
-				EC9192A01688D9FA00CDD975 /* Default-568h@2x.png in Resources */,
 				EC9192A31688D9FA00CDD975 /* MainStoryboard.storyboard in Resources */,
+				30A4C6A2168F3CE3000D8DB6 /* Default-568h@2x.png in Resources */,
+				30A4C6A3168F3CE3000D8DB6 /* Default.png in Resources */,
+				30A4C6A4168F3CE3000D8DB6 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
