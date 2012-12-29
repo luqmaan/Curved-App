@@ -10,15 +10,10 @@
 
 @interface ShippingInformationViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *messageTxt;
+@property (weak, nonatomic) IBOutlet UIButton *toBtn;
+@property (nonatomic, retain) NSDictionary *toInfo;
 
-@property (weak, nonatomic) IBOutlet UITextField *returnName;
-@property (weak, nonatomic) IBOutlet UITextField *returnAddress1;
-@property (weak, nonatomic) IBOutlet UITextField *returnAddress2;
-
-
-@property (weak, nonatomic) IBOutlet UITextField *recipientName;
-@property (weak, nonatomic) IBOutlet UITextField *recipientAddress1;
-@property (weak, nonatomic) IBOutlet UITextField *recipientAddress2;
-
+- (IBAction)toTapped:(id)sender;
 
 @end
