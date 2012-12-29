@@ -82,10 +82,10 @@
             color = [UIColor clearColor];
             break;
         case 1:
-            color = [UIColor whiteColor];
+            color = [UIColor blackColor];
             break;
         case 2:
-            color = [UIColor blackColor];
+            color = [UIColor whiteColor];
             break;
     }
 
