@@ -11,8 +11,9 @@
 @interface ShippingInformationViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *messageTxt;
-@property (weak, nonatomic) IBOutlet UIButton *fromBtn;
 @property (weak, nonatomic) IBOutlet UIButton *toBtn;
+@property (nonatomic, retain) NSDictionary *toInfo;
 
+- (IBAction)toTapped:(id)sender;
 
 @end

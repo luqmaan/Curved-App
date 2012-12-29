@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301DE010168F7C3700A2CD73 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 301DE00F168F7C3700A2CD73 /* ContactsViewController.m */; };
 		308BC69D168F394600BBE793 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308BC69C168F394600BBE793 /* CheckoutViewController.m */; };
 		308BC6A1168F396700BBE793 /* GraciasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308BC6A0168F396700BBE793 /* GraciasViewController.m */; };
 		30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A0234B168EA00B009EC249 /* MainMenuViewController.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301DE00E168F7C3700A2CD73 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		301DE00F168F7C3700A2CD73 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		308BC69B168F394600BBE793 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
 		308BC69C168F394600BBE793 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
 		308BC69F168F396700BBE793 /* GraciasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraciasViewController.h; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */,
 				ECE2194C168D441400988388 /* ShippingInformationViewController.h */,
 				ECE2194D168D441400988388 /* ShippingInformationViewController.m */,
+				301DE00E168F7C3700A2CD73 /* ContactsViewController.h */,
+				301DE00F168F7C3700A2CD73 /* ContactsViewController.m */,
 				308BC69B168F394600BBE793 /* CheckoutViewController.h */,
 				308BC69C168F394600BBE793 /* CheckoutViewController.m */,
 				30A4C6A5168F3EE5000D8DB6 /* NewCardViewController.h */,
@@ -241,6 +246,7 @@
 				308BC69D168F394600BBE793 /* CheckoutViewController.m in Sources */,
 				308BC6A1168F396700BBE793 /* GraciasViewController.m in Sources */,
 				30A4C6A7168F3EE5000D8DB6 /* NewCardViewController.m in Sources */,
+				301DE010168F7C3700A2CD73 /* ContactsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

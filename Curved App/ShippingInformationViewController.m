@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self setToInfo:[[NSDictionary alloc] init]];
 	// Do any additional setup after loading the view.
 }
 
@@ -36,4 +36,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)toTapped:(id)sender {
+    if ([_toInfo count] == 0) {
+        [self performSegueWithIdentifier:@"contactsSegue" sender:self];
+    }
+    else {
+        //editing screen
+    }
+    //if blank:
+        // offer to: fill with your info, address card info, or manually enter info
+    //else:
+        //pull up manual edit screen
+}
 @end
