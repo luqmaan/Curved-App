@@ -1,18 +1,18 @@
 //
-//  ShippingInformationViewController.m
+//  CheckoutViewController.m
 //  Curved App
 //
-//  Created by Intern on 12/27/12.
+//  Created by Charles Burgess on 12/29/12.
 //  Copyright (c) 2012 Createch. All rights reserved.
 //
 
-#import "ShippingInformationViewController.h"
+#import "CheckoutViewController.h"
 
-@interface ShippingInformationViewController ()
+@interface CheckoutViewController ()
 
 @end
 
-@implementation ShippingInformationViewController
+@implementation CheckoutViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 	// Do any additional setup after loading the view.
 }
 

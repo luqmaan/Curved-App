@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308BC69D168F394600BBE793 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308BC69C168F394600BBE793 /* CheckoutViewController.m */; };
+		308BC6A1168F396700BBE793 /* GraciasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308BC6A0168F396700BBE793 /* GraciasViewController.m */; };
 		30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A0234B168EA00B009EC249 /* MainMenuViewController.m */; };
 		EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */; };
 		EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9192891688D9FA00CDD975 /* UIKit.framework */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		308BC69B168F394600BBE793 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
+		308BC69C168F394600BBE793 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
+		308BC69F168F396700BBE793 /* GraciasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraciasViewController.h; sourceTree = "<group>"; };
+		308BC6A0168F396700BBE793 /* GraciasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraciasViewController.m; sourceTree = "<group>"; };
 		30A0234A168EA00B009EC249 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		30A0234B168EA00B009EC249 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramaFrameViewController.h; sourceTree = "<group>"; };
@@ -68,6 +74,10 @@
 				EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */,
 				ECE2194C168D441400988388 /* ShippingInformationViewController.h */,
 				ECE2194D168D441400988388 /* ShippingInformationViewController.m */,
+				308BC69B168F394600BBE793 /* CheckoutViewController.h */,
+				308BC69C168F394600BBE793 /* CheckoutViewController.m */,
+				308BC69F168F396700BBE793 /* GraciasViewController.h */,
+				308BC6A0168F396700BBE793 /* GraciasViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -223,6 +233,8 @@
 				EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */,
 				ECE2194E168D441400988388 /* ShippingInformationViewController.m in Sources */,
 				30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */,
+				308BC69D168F394600BBE793 /* CheckoutViewController.m in Sources */,
+				308BC6A1168F396700BBE793 /* GraciasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

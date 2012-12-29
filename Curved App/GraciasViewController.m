@@ -1,18 +1,18 @@
 //
-//  ShippingInformationViewController.m
+//  GraciasViewController.m
 //  Curved App
 //
-//  Created by Intern on 12/27/12.
+//  Created by Charles Burgess on 12/29/12.
 //  Copyright (c) 2012 Createch. All rights reserved.
 //
 
-#import "ShippingInformationViewController.h"
+#import "GraciasViewController.h"
 
-@interface ShippingInformationViewController ()
+@interface GraciasViewController ()
 
 @end
 
-@implementation ShippingInformationViewController
+@implementation GraciasViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     
+    [[self navigationItem] setHidesBackButton:YES];
 	// Do any additional setup after loading the view.
 }
 
