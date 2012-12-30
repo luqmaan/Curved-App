@@ -123,6 +123,8 @@
 		EC05936E168FB7CD0023898A /* AviarySDK */ = {
 			isa = PBXGroup;
 			children = (
+				EC059381168FB81E0023898A /* libz.1.2.5.dylib */,
+				EC05937F168FB8150023898A /* libsqlite3.0.dylib */,
 				EC05936F168FB7CD0023898A /* Headers */,
 				EC059376168FB7CD0023898A /* libAviarySDK.a */,
 				EC059377168FB7CD0023898A /* Resources */,
@@ -155,15 +157,6 @@
 		EC91927A1688D9F900CDD975 = {
 			isa = PBXGroup;
 			children = (
-				EC059389168FB83F0023898A /* OpenGLES.framework */,
-				EC059387168FB8390023898A /* CoreText.framework */,
-				EC059385168FB82E0023898A /* StoreKit.framework */,
-				EC059383168FB8250023898A /* QuartzCore.framework */,
-				EC059381168FB81E0023898A /* libz.1.2.5.dylib */,
-				EC05937F168FB8150023898A /* libsqlite3.0.dylib */,
-				EC05937D168FB8080023898A /* CoreData.framework */,
-				EC05937B168FB8010023898A /* Accelerate.framework */,
-				EC05936E168FB7CD0023898A /* AviarySDK */,
 				EC91928F1688D9FA00CDD975 /* Curved App */,
 				EC9192881688D9FA00CDD975 /* Frameworks */,
 				EC9192861688D9FA00CDD975 /* Products */,
@@ -181,9 +174,16 @@
 		EC9192881688D9FA00CDD975 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC059389168FB83F0023898A /* OpenGLES.framework */,
+				EC059387168FB8390023898A /* CoreText.framework */,
+				EC059385168FB82E0023898A /* StoreKit.framework */,
+				EC059383168FB8250023898A /* QuartzCore.framework */,
+				EC05937D168FB8080023898A /* CoreData.framework */,
+				EC05937B168FB8010023898A /* Accelerate.framework */,
 				EC9192891688D9FA00CDD975 /* UIKit.framework */,
 				EC91928B1688D9FA00CDD975 /* Foundation.framework */,
 				EC91928D1688D9FA00CDD975 /* CoreGraphics.framework */,
+				EC05936E168FB7CD0023898A /* AviarySDK */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
