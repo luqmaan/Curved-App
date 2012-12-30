@@ -102,15 +102,58 @@
 - (void)displayEditorForImage:(UIImage *)imageToEdit
 {
     
-    NSArray *tools = [[NSArray alloc] initWithObjects:@"editor.tool.crop", nil];
+    /*  Set the options for the Aviary editor
+        More info here: https://github.com/AviaryInc/Mobile-Feather-SDK-for-iOS/blob/master/AviarySDK/Headers/AFPhotoEditorCustomization.h
+     */
+    
+    
+    
+    NSArray *tools = [[NSArray alloc] initWithObjects:kAFEnhance, kAFEffects, kAFCrop, kAFBrightness, kAFContrast, nil];
+    NSArray *orientation = [NSArray arrayWithObject:[NSNumber
+                               numberWithUnsignedInt:UIInterfaceOrientationLandscapeLeft ]];
+    
+
+    NSDictionary *half8511 = [NSDictionary dictionary];
+    
+    
+    
+    [half8511 setValue:[NSNumber numberWithFloat:3.2] forKey:kAFCropPresetWidth];
+    [half8511 setValue:[NSNumber numberWithFloat:3.2] forKey:kAFCropPresetHeight];
+    
+    NSArray *cropPresets = [[NSArray alloc] initWithObjects:half8511, nil];
+    
+    UIColor *accentColor = [UIColor colorWithRed:0.506 green:0.733 blue:0.098 alpha:1];
+    UIColor *canvasColor = [UIColor whiteColor];
+    
+    UIColor *navBarColor = [UIColor whiteColor];
+    UIColor *navBarTextColor = [UIColor colorWithRed:0.220 green:0.220 blue:0.220 alpha:1];
+    UIColor *navBarCancelColor = [UIColor colorWithRed:0.973 green:0.973 blue:0.973 alpha:1];
+    UIColor *navBarCancelTextColor = [UIColor colorWithRed:0.220 green:0.220 blue:0.220 alpha:1];
+    
+    
+    UIColor *footerTextColor = [UIColor colorWithRed:0.502 green:0.502 blue:0.502 alpha:1];
+//    UIColor *footerIconColor = [UIColor colorWithRed:0.506 green:0.733 blue:0.098 alpha:1];;
+    UIColor *footerBackgroundColor = [UIColor whiteColor];
+    
     [AFPhotoEditorCustomization setOptionValue:tools forKey:@"editor.toolOrder"];
+    [AFPhotoEditorCustomization setOptionValue:orientation forKey:@"editor.supportedOrientations"];
+//    [AFPhotoEditorCustomization setOptionValue:cropPresets forKey:@"editor.tool.crop"];
+    [AFPhotoEditorCustomization setOptionValue:canvasColor forKey:@"editor.canvasColor"];
+    [AFPhotoEditorCustomization setOptionValue:accentColor forKey:@"editor.accentColor"];
+    [AFPhotoEditorCustomization setOptionValue:navBarColor forKey:@"editor.navigationBarBackgroundColor"];
+    [AFPhotoEditorCustomization setOptionValue:navBarTextColor forKey:@"editor.navigationBarTextColor"];
+    [AFPhotoEditorCustomization setOptionValue:navBarCancelColor forKey:@"editor.navigationBarCancelColor"];
+    [AFPhotoEditorCustomization setOptionValue:navBarCancelTextColor forKey:@"editor.navigationBarCancelTextColor"];
+    [AFPhotoEditorCustomization setOptionValue:footerTextColor forKey:@"editor.bottomBarButtonTextColor"];
+    [AFPhotoEditorCustomization setOptionValue:footerBackgroundColor forKey:@"editor.backgroundColor"];
+//    [AFPhotoEditorCustomization setOptionValue:footerIconColor forKey:@"editor.bottomBarButtonIconColor"];
     
-    [AFPhotoEditorCustomization setOptionValue:[UIColor redColor] forKey:@"editor.accentColor"];
+    
+    // Open the editor
     AFPhotoEditorController *editorController = [[AFPhotoEditorController alloc] initWithImage:imageToEdit];
-    
     [editorController setDelegate:self];
-    
     [self presentViewController:editorController animated:YES completion:nil];
+    
 }
 
 
