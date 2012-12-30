@@ -1,0 +1,3 @@
+[submodule "Curved App/ios-image-editor"]
+	path = Curved App/ios-image-editor
+	url = git://github.com/heitorfr/ios-image-editor.git
