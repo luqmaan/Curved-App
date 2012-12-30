@@ -112,10 +112,13 @@
     NSArray *orientation = [NSArray arrayWithObject:[NSNumber
                                numberWithUnsignedInt:UIInterfaceOrientationLandscapeLeft ]];
     
+    // crop settings
     NSDictionary *panoSizePreset = [[NSDictionary alloc] initWithObjectsAndKeys:
-                               [NSNumber numberWithFloat:4.625], kAFCropPresetHeight,
-                               [NSNumber numberWithFloat:11.125], kAFCropPresetWidth,
+                               [NSNumber numberWithFloat:1], kAFCropPresetHeight,
+                               [NSNumber numberWithFloat:3.5], kAFCropPresetWidth,
+                                    @"Panorama", kAFCropPresetName,
                                nil];
+    
     NSArray *cropPresets = [[NSArray alloc] initWithObjects:panoSizePreset, nil];
     
     
@@ -123,15 +126,15 @@
     UIColor *canvasColor = [UIColor whiteColor];
     UIColor *accentColor = [UIColor colorWithRed:0.506 green:0.733 blue:0.098 alpha:1];
     
-    // navbar
+    // navbar colors
     UIColor *navBarColor = [UIColor whiteColor];
     UIColor *navBarTextColor = [UIColor colorWithRed:0.220 green:0.220 blue:0.220 alpha:1];
     UIColor *navBarCancelColor = [UIColor colorWithRed:0.973 green:0.973 blue:0.973 alpha:1];
     UIColor *navBarCancelTextColor = [UIColor colorWithRed:0.220 green:0.220 blue:0.220 alpha:1];
     
-    // footer
+    // footer colors
     UIColor *footerTextColor = [UIColor colorWithRed:0.502 green:0.502 blue:0.502 alpha:1];
-//    UIColor *footerIconColor = [UIColor colorWithRed:0.506 green:0.733 blue:0.098 alpha:1];;
+    // UIColor *footerIconColor = [UIColor colorWithRed:0.506 green:0.733 blue:0.098 alpha:1];;
     UIColor *footerBackgroundColor = [UIColor whiteColor];
     
     // apply the settings
@@ -146,11 +149,10 @@
     [AFPhotoEditorCustomization setOptionValue:navBarCancelTextColor forKey:@"editor.navigationBarCancelTextColor"];
     [AFPhotoEditorCustomization setOptionValue:footerTextColor forKey:@"editor.bottomBarButtonTextColor"];
     [AFPhotoEditorCustomization setOptionValue:footerBackgroundColor forKey:@"editor.backgroundColor"];
-//    [AFPhotoEditorCustomization setOptionValue:footerIconColor forKey:@"editor.bottomBarButtonIconColor"];
+    // [AFPhotoEditorCustomization setOptionValue:footerIconColor forKey:@"editor.bottomBarButtonIconColor"];
     [AFPhotoEditorCustomization setOptionValue:cropPresets forKey:@"editor.tool.crop.presets"];
     [AFPhotoEditorCustomization setOptionValue:[NSNumber numberWithBool:NO] forKey:@"editor.tool.crop.enableOriginal"];
     [AFPhotoEditorCustomization setOptionValue:[NSNumber numberWithBool:NO] forKey:@"editor.tool.crop.enableCustom"];
-
     
     // Open the editor
     AFPhotoEditorController *editorController = [[AFPhotoEditorController alloc] initWithImage:imageToEdit];
