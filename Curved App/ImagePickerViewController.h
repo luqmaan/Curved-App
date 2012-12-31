@@ -9,12 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "AFPhotoEditorController.h"
 
-#import "NLImageCropperView.h"
+//#import "NLImageCropperView.h"
 
 @interface ImagePickerViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, AFPhotoEditorControllerDelegate>
-{
-    NLImageCropperView *_imageCropper;
-}
 
 @property UIImage *originalImage;
 @property UIImage *croppedImage;

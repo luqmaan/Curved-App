@@ -30,7 +30,7 @@
     [super viewDidLoad];
     NSLog(@"ImagePickerViewController didLoad");
     
-    self->_imageCropper = [[NLImageCropperView alloc] init];
+//    self->_imageCropper = [[NLImageCropperView alloc] init];
     [self openImagePicker];
 }
 
@@ -76,7 +76,7 @@
 
 - (IBAction)tweakImage:(id)sender {
     
-    [self setCroppedImage:[_imageCropper getCroppedImage]];
+//    [self setCroppedImage:[_imageCropper getCroppedImage]];
     [self presentAviaryEditorWithImage:croppedImage];
     
 }
@@ -84,10 +84,10 @@
 - (void)presentImageCropperWithImage:(UIImage *)image
 {
     
-    [self->_imageCropper setFrame:self.view.bounds];    
-    [self.view addSubview:_imageCropper];
-    [_imageCropper setImage:image];
-    [_imageCropper setOriginX:100 setOriginY:500 setHeightRatio:4.625 setWidthRatio: 11.125];
+//    [self->_imageCropper setFrame:self.view.bounds];    
+//    [self.view addSubview:_imageCropper];
+//    [_imageCropper setImage:image];
+//    [_imageCropper setOriginX:100 setOriginY:500 setHeightRatio:4.625 setWidthRatio: 11.125];
     
 }
 - (void)presentimageCropperWithOriginalImage
