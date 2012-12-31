@@ -28,4 +28,7 @@
 - (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image;
 - (void)photoEditorCanceled:(AFPhotoEditorController *)editor;
 
+// NLImagePicker
+- (void)cropImage:(UIImage *)image withCallback:(void(^)(UIImage *croppedImage))completion;
+
 @end

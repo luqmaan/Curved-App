@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M2c-Om-sxI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M2c-Om-sxI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -52,65 +52,27 @@
             </objects>
             <point key="canvasLocation" x="617" y="-83"/>
         </scene>
-        <!--Panorama Frame View Controller - Customize-->
+        <!--Panorama Frame View Controller - Crop-->
         <scene sceneID="ycF-fX-Qkv">
             <objects>
                 <viewController id="rjm-a1-gsG" customClass="PanoramaFrameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W0g-aX-B4I">
                         <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-c8-gBb">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="33m-pz-JVk"/>
-                                    <constraint firstAttribute="width" constant="540" id="BU7-hJ-lFE"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" text="Aviary Filters in an instagram-stlye slider" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-kx-VPJ">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="ZBv-3M-XeW"/>
-                                    <constraint firstAttribute="height" constant="36" id="j9p-De-YxF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KeK-tG-5wf">
-                                <segments>
-                                    <segment title="None"/>
-                                    <segment title="Black"/>
-                                    <segment title="White"/>
-                                </segments>
-                                <connections>
-                                    <action selector="changeFrameColor:" destination="rjm-a1-gsG" eventType="valueChanged" id="tik-g5-XnM"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="KeK-tG-5wf" firstAttribute="top" secondItem="W0g-aX-B4I" secondAttribute="top" constant="4" id="45M-Vt-mnJ"/>
-                            <constraint firstItem="KeK-tG-5wf" firstAttribute="centerX" secondItem="ixl-c8-gBb" secondAttribute="centerX" type="default" id="Ar0-Yl-Xay"/>
-                            <constraint firstItem="ixl-c8-gBb" firstAttribute="top" secondItem="W0g-aX-B4I" secondAttribute="top" constant="50" id="InA-dU-vil"/>
-                            <constraint firstAttribute="bottom" secondItem="JwJ-kx-VPJ" secondAttribute="bottom" constant="21" id="KbM-JP-Ity"/>
-                            <constraint firstItem="KeK-tG-5wf" firstAttribute="centerX" secondItem="W0g-aX-B4I" secondAttribute="centerX" type="default" id="QkD-BY-TRW"/>
-                            <constraint firstItem="JwJ-kx-VPJ" firstAttribute="centerX" secondItem="ixl-c8-gBb" secondAttribute="centerX" type="default" id="iAD-M4-SXM"/>
-                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Customize" id="hZU-Ih-3ax">
+                    <navigationItem key="navigationItem" title="Crop" id="hZU-Ih-3ax">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="3fY-ex-gvC">
                             <connections>
-                                <segue destination="Brf-zs-LRP" kind="push" id="7tb-GS-kR6"/>
+                                <segue destination="onh-Qc-yWD" kind="push" id="AD9-03-cgQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="imageView" destination="ixl-c8-gBb" id="4TG-25-9yJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0C-fU-zJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1316" y="-83"/>
+            <point key="canvasLocation" x="1306" y="-83"/>
         </scene>
         <!--Checkout View Controller - Checkout-->
         <scene sceneID="7iv-02-hj8">
@@ -194,7 +156,7 @@
                                 </view>
                                 <constraints>
                                     <constraint firstItem="boj-nw-MaJ" firstAttribute="top" secondItem="vuT-VM-GIo" secondAttribute="top" constant="15" id="AXV-eu-h3Q"/>
-                                    <constraint firstItem="boj-nw-MaJ" firstAttribute="centerX" secondItem="vuT-VM-GIo" secondAttribute="centerX" type="default" id="JfC-Dy-WqM"/>
+                                    <constraint firstItem="boj-nw-MaJ" firstAttribute="leading" secondItem="vuT-VM-GIo" secondAttribute="leading" constant="198" id="hop-xp-37m"/>
                                 </constraints>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="existingCell" id="A46-Lg-MIv">
@@ -237,9 +199,9 @@
                                     <constraint firstItem="Eho-gv-2J3" firstAttribute="trailing" secondItem="gts-8e-rsO" secondAttribute="trailing" type="default" id="3qq-MT-pf2"/>
                                     <constraint firstItem="Eho-gv-2J3" firstAttribute="leading" secondItem="gts-8e-rsO" secondAttribute="leading" type="default" id="I5O-Be-ckq"/>
                                     <constraint firstItem="PSU-Rq-GfL" firstAttribute="top" secondItem="A46-Lg-MIv" secondAttribute="top" constant="7" id="KME-kK-p7z"/>
+                                    <constraint firstItem="gts-8e-rsO" firstAttribute="leading" secondItem="A46-Lg-MIv" secondAttribute="leading" constant="310" id="Ko8-OG-xV9"/>
                                     <constraint firstItem="PSU-Rq-GfL" firstAttribute="leading" secondItem="A46-Lg-MIv" secondAttribute="leading" constant="30" id="Q5K-Ed-Ghh"/>
                                     <constraint firstItem="gts-8e-rsO" firstAttribute="top" secondItem="PSU-Rq-GfL" secondAttribute="top" type="default" id="Xmc-MN-jGv"/>
-                                    <constraint firstAttribute="trailing" secondItem="gts-8e-rsO" secondAttribute="trailing" constant="21" id="YGW-9l-G2s"/>
                                     <constraint firstItem="Eho-gv-2J3" firstAttribute="bottom" secondItem="PSU-Rq-GfL" secondAttribute="bottom" type="default" id="nqF-m0-GT0"/>
                                 </constraints>
                             </tableViewCell>
@@ -318,6 +280,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8zJ-d2-Vmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4211" y="169"/>
+        </scene>
+        <!--View Controller - Customize Photo-->
+        <scene sceneID="eaG-ca-Dtg">
+            <objects>
+                <viewController id="onh-Qc-yWD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="411-fT-KBr">
+                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Customize Photo" id="ydq-Te-ZPC">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="jql-3I-DKR">
+                            <connections>
+                                <segue destination="Brf-zs-LRP" kind="push" id="XC3-SS-OM4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8v-lG-L8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="406"/>
         </scene>
         <!--Shipping Information View Controller - Personalize-->
         <scene sceneID="ppC-Ov-hBA">
@@ -404,10 +388,8 @@
                             <constraint firstItem="AYq-sC-Vhv" firstAttribute="leading" secondItem="tSr-Dt-t7c" secondAttribute="leading" type="user" id="YOv-uR-5qw"/>
                             <constraint firstItem="bUL-xg-HeU" firstAttribute="bottom" secondItem="j7M-sM-4g9" secondAttribute="bottom" type="default" id="aiu-hN-xsj"/>
                             <constraint firstAttribute="trailing" secondItem="bUL-xg-HeU" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="b4d-dd-yz0"/>
-                            <constraint firstItem="gBl-EL-and" firstAttribute="centerX" secondItem="bUL-xg-HeU" secondAttribute="centerX" type="user" id="cQI-w7-emM"/>
                             <constraint firstItem="Qmw-Rr-XZc" firstAttribute="leading" secondItem="7ck-f3-0nh" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="dnk-LO-jpK"/>
                             <constraint firstItem="gBl-EL-and" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="100" id="fJB-Sd-rPN"/>
-                            <constraint firstAttribute="trailing" secondItem="gBl-EL-and" secondAttribute="trailing" constant="39" type="user" id="gQT-ng-xFC"/>
                             <constraint firstItem="bUL-xg-HeU" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="293" type="user" id="hQ5-RJ-aFZ"/>
                             <constraint firstItem="Qmw-Rr-XZc" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="i8S-yg-97J"/>
                             <constraint firstItem="j7M-sM-4g9" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kCU-tz-j2l"/>
@@ -431,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14S-tE-6oQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973" y="-83"/>
+            <point key="canvasLocation" x="2239" y="-83"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iul-IA-Nae">
@@ -453,41 +435,6 @@
             <point key="canvasLocation" x="-65" y="-83"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CheckoutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CheckoutViewController.h"/>
-        </class>
-        <class className="ContactsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactsViewController.h"/>
-        </class>
-        <class className="GraciasViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GraciasViewController.h"/>
-        </class>
-        <class className="MainMenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="NewCardViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewCardViewController.h"/>
-        </class>
-        <class className="PanoramaFrameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PanoramaFrameViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changeFrameColor:"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="ShippingInformationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShippingInformationViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="toTapped:"/>
-                <relationship kind="outlet" name="messageTxt" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="toBtn" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
