@@ -60,7 +60,8 @@
         UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
         
         
-        [self displayEditorForImage:image];
+        [self cropImage:image];
+//        [self displayEditorForImage:image];
         
     }];
     
@@ -161,6 +162,18 @@
     
 }
 
+- (void)cropImage:(UIImage *)image
+{
+    
+//    CropViewController *cropViewController = [i]    
+//    [self presentViewController:cropViewController animated:YES completion:nil];
+    
+//    [self.storyboard instantiateViewControllerWithIdentifier:@"cropStoryboardViewController"];
+    
+    [self performSegueWithIdentifier:@"cropStoryboardViewController" sender:self];
+    
+    NSLog(@"Crop the image");
+}
 
 - (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
 {
