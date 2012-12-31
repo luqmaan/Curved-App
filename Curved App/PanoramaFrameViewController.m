@@ -59,8 +59,8 @@
     [self dismissViewControllerAnimated:YES completion:^{
         UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
         
-        
-        [self displayEditorForImage:image];
+        [self cropImage:image];
+//        [self displayEditorForImage:image];
         
     }];
     
@@ -97,6 +97,14 @@
 
 }
 
+
+- (void)cropImage:(UIImage *)image {
+    
+    _imageCropper = [[NLImageCropperView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:_imageCropper];
+    [_imageCropper setImage:image];
+    [_imageCropper setOriginX:100 setOriginY:500 setHeightRatio:4.625 setWidthRatio: 11.125];
+}
 
 
 - (void)displayEditorForImage:(UIImage *)imageToEdit

@@ -1,0 +1,6 @@
+[submodule "Curved App/SSPhotoCropperViewController"]
+	path = Curved App/SSPhotoCropperViewController
+	url = git://github.com/ardalahmet/SSPhotoCropperViewController.git
+[submodule "Curved App/NLImageCropper"]
+	path = Curved App/NLImageCropper
+	url = https://github.com/bilalmughal/NLImageCropper

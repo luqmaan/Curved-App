@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AFPhotoEditorController.h"
 
+#import "NLImageCropperView.h"
+
 @interface PanoramaFrameViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, AFPhotoEditorControllerDelegate>
+{
+    NLImageCropperView* _imageCropper;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
