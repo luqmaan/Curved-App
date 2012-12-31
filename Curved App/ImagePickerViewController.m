@@ -6,13 +6,15 @@
 //  Copyright (c) 2012 Createch. All rights reserved.
 //
 
-#import "PanoramaFrameViewController.h"
+#import "ImagePickerViewController.h"
 
-@interface PanoramaFrameViewController ()
+@interface ImagePickerViewController ()
 
 @end
 
-@implementation PanoramaFrameViewController
+@implementation ImagePickerViewController
+
+@synthesize croppedImage, tweakedImage, originalImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,13 +26,12 @@
 }
 
 - (void)viewDidLoad
-{
-    NSLog(@"PanoramaFrameViewController didLoad");
-    
-    [self openImagePicker];
-    
+{    
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    NSLog(@"ImagePickerViewController didLoad");
+    
+    self->_imageCropper = [[NLImageCropperView alloc] init];
+    [self openImagePicker];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,11 +58,9 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     [self dismissViewControllerAnimated:YES completion:^{
-        UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-        
-        [self cropImage:image withCallback:^(UIImage *croppedImage){
-//            [self displayEditorForImage:croppedImage];
-        }];
+                
+        [self setOriginalImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
+        [self presentImageCropperWithImage:originalImage];
         
     }];
     
@@ -75,47 +74,28 @@
     }];
 }
 
-- (IBAction)changeFrameColor:(UISegmentedControl *)segment {
-
-    NSLog(@"%d", segment.selectedSegmentIndex);
+- (IBAction)tweakImage:(id)sender {
     
-    UIColor *color = [[UIColor alloc] init];
+    [self setCroppedImage:[_imageCropper getCroppedImage]];
+    [self presentAviaryEditorWithImage:croppedImage];
     
-    switch (segment.selectedSegmentIndex) {
-        case 0: default:
-            color = [UIColor clearColor];
-            break;
-        case 1:
-            color = [UIColor blackColor];
-            break;
-        case 2:
-            color = [UIColor whiteColor];
-            break;
-    }
-
-    [[self view] setBackgroundColor:color];
-
-
 }
 
-
-- (void)cropImage:(UIImage *)image withCallback:(void(^)(UIImage *croppedImage))completion
+- (void)presentImageCropperWithImage:(UIImage *)image
 {
     
-    _imageCropper = [[NLImageCropperView alloc] initWithFrame:self.view.bounds];
+    [self->_imageCropper setFrame:self.view.bounds];    
     [self.view addSubview:_imageCropper];
     [_imageCropper setImage:image];
     [_imageCropper setOriginX:100 setOriginY:500 setHeightRatio:4.625 setWidthRatio: 11.125];
     
-    completion([_imageCropper getCroppedImage]);
 }
-
-- (void)doneWithImage:(UIImage *)image
+- (void)presentimageCropperWithOriginalImage
 {
-    NSLog(@"Done with the image.");
+    [self presentImageCropperWithImage:originalImage];
+    
 }
-
-- (void)displayEditorForImage:(UIImage *)imageToEdit
+- (void)presentAviaryEditorWithImage:(UIImage *)imageToEdit
 {
     
     /*  Set the options for the Aviary editor
@@ -180,18 +160,18 @@
 
 - (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    [[self imageView] setImage:image];
     // Handle the result image here
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self setTweakedImage:image];
+    }];
 }
 
 - (void)photoEditorCanceled:(AFPhotoEditorController *)editor
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-        [self openImagePicker];
-    }];
     // Handle cancelation here
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self presentImageCropperWithImage:originalImage];
+    }];
 }
 
 @end

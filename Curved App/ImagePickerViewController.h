@@ -11,14 +11,24 @@
 
 #import "NLImageCropperView.h"
 
-@interface PanoramaFrameViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, AFPhotoEditorControllerDelegate>
+@interface ImagePickerViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, AFPhotoEditorControllerDelegate>
 {
-    NLImageCropperView* _imageCropper;
+    NLImageCropperView *_imageCropper;
 }
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property UIImage *originalImage;
+@property UIImage *croppedImage;
+@property UIImage *tweakedImage;
 
-- (IBAction)changeFrameColor:(id)sender;
+- (IBAction)tweakImage:(id)sender;
+
+- (void)presentAviaryEditorWithImage:(UIImage *)imageToEdit;
+- (void)presentImageCropperWithImage:(UIImage *)image;
+- (void)presentimageCropperWithOriginalImage;
+
+/* 
+ * Delegates 
+ */
 
 // UIImagePicker
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
@@ -27,8 +37,5 @@
 // Aviary
 - (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image;
 - (void)photoEditorCanceled:(AFPhotoEditorController *)editor;
-
-// NLImagePicker
-- (void)cropImage:(UIImage *)image withCallback:(void(^)(UIImage *croppedImage))completion;
 
 @end

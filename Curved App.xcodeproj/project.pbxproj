@@ -23,7 +23,14 @@
 		EC05938E168FB8BC0023898A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC05938B168FB8BC0023898A /* Default-568h@2x.png */; };
 		EC05938F168FB8BC0023898A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC05938C168FB8BC0023898A /* Default.png */; };
 		EC059390168FB8BC0023898A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC05938D168FB8BC0023898A /* Default@2x.png */; };
-		EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */; };
+		EC263B8A1691476E00B7000D /* NLImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC263B841691476E00B7000D /* NLImageCropperView.m */; };
+		EC263B8C1691476E00B7000D /* NLCropViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EC263B881691476E00B7000D /* NLCropViewLayer.m */; };
+		EC263BAD1692476F00B7000D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EC263BA61692476F00B7000D /* README.md */; };
+		EC263BAE1692476F00B7000D /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = EC263BA81692476F00B7000D /* UIImage+Alpha.m */; };
+		EC263BAF1692476F00B7000D /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = EC263BAA1692476F00B7000D /* UIImage+Resize.m */; };
+		EC263BB01692476F00B7000D /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = EC263BAC1692476F00B7000D /* UIImage+RoundedCorner.m */; };
+		EC263BB216924B1B00B7000D /* corner.png in Resources */ = {isa = PBXBuildFile; fileRef = EC263BB116924B1B00B7000D /* corner.png */; };
+		EC503583168CE9F0008F7120 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC503582168CE9F0008F7120 /* ImagePickerViewController.m */; };
 		EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9192891688D9FA00CDD975 /* UIKit.framework */; };
 		EC91928C1688D9FA00CDD975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928B1688D9FA00CDD975 /* Foundation.framework */; };
 		EC91928E1688D9FA00CDD975 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928D1688D9FA00CDD975 /* CoreGraphics.framework */; };
@@ -60,8 +67,20 @@
 		EC05938B168FB8BC0023898A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC05938C168FB8BC0023898A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EC05938D168FB8BC0023898A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramaFrameViewController.h; sourceTree = "<group>"; };
-		EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaFrameViewController.m; sourceTree = "<group>"; };
+		EC263B841691476E00B7000D /* NLImageCropperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLImageCropperView.m; path = "Curved App/NLImageCropper/NLImageCropper/NLImageCropperView.m"; sourceTree = "<group>"; };
+		EC263B861691476E00B7000D /* NLImageCropperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLImageCropperView.h; path = "Curved App/NLImageCropper/NLImageCropper/NLImageCropperView.h"; sourceTree = "<group>"; };
+		EC263B871691476E00B7000D /* NLCropViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLCropViewLayer.h; path = "Curved App/NLImageCropper/NLImageCropper/NLCropViewLayer.h"; sourceTree = "<group>"; };
+		EC263B881691476E00B7000D /* NLCropViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLCropViewLayer.m; path = "Curved App/NLImageCropper/NLImageCropper/NLCropViewLayer.m"; sourceTree = "<group>"; };
+		EC263BA61692476F00B7000D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EC263BA71692476F00B7000D /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		EC263BA81692476F00B7000D /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		EC263BA91692476F00B7000D /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		EC263BAA1692476F00B7000D /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		EC263BAB1692476F00B7000D /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		EC263BAC1692476F00B7000D /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		EC263BB116924B1B00B7000D /* corner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = corner.png; path = "Curved App/NLImageCropper/NLImageCropper/corner.png"; sourceTree = "<group>"; };
+		EC503581168CE9F0008F7120 /* ImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
+		EC503582168CE9F0008F7120 /* ImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
 		EC9192851688D9FA00CDD975 /* Curved App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Curved App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9192891688D9FA00CDD975 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC91928B1688D9FA00CDD975 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,8 +127,8 @@
 			children = (
 				30A0234A168EA00B009EC249 /* MainMenuViewController.h */,
 				30A0234B168EA00B009EC249 /* MainMenuViewController.m */,
-				EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */,
-				EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */,
+				EC503581168CE9F0008F7120 /* ImagePickerViewController.h */,
+				EC503582168CE9F0008F7120 /* ImagePickerViewController.m */,
 				ECE2194C168D441400988388 /* ShippingInformationViewController.h */,
 				ECE2194D168D441400988388 /* ShippingInformationViewController.m */,
 				308BC69B168F394600BBE793 /* CheckoutViewController.h */,
@@ -152,9 +171,38 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		EC263B821691471800B7000D /* NLImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				EC263BB116924B1B00B7000D /* corner.png */,
+				EC263BA51692476F00B7000D /* UIImage-Categories */,
+				EC263B841691476E00B7000D /* NLImageCropperView.m */,
+				EC263B861691476E00B7000D /* NLImageCropperView.h */,
+				EC263B871691476E00B7000D /* NLCropViewLayer.h */,
+				EC263B881691476E00B7000D /* NLCropViewLayer.m */,
+			);
+			name = NLImageEditor;
+			sourceTree = "<group>";
+		};
+		EC263BA51692476F00B7000D /* UIImage-Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EC263BA61692476F00B7000D /* README.md */,
+				EC263BA71692476F00B7000D /* UIImage+Alpha.h */,
+				EC263BA81692476F00B7000D /* UIImage+Alpha.m */,
+				EC263BA91692476F00B7000D /* UIImage+Resize.h */,
+				EC263BAA1692476F00B7000D /* UIImage+Resize.m */,
+				EC263BAB1692476F00B7000D /* UIImage+RoundedCorner.h */,
+				EC263BAC1692476F00B7000D /* UIImage+RoundedCorner.m */,
+			);
+			name = "UIImage-Categories";
+			path = "Curved App/NLImageCropper/NLImageCropper/UIImage-Categories";
+			sourceTree = "<group>";
+		};
 		EC91927A1688D9F900CDD975 = {
 			isa = PBXGroup;
 			children = (
+				EC263B821691471800B7000D /* NLImageEditor */,
 				EC05936E168FB7CD0023898A /* AviarySDK */,
 				EC91928F1688D9FA00CDD975 /* Curved App */,
 				EC9192881688D9FA00CDD975 /* Frameworks */,
@@ -285,6 +333,8 @@
 				EC05938E168FB8BC0023898A /* Default-568h@2x.png in Resources */,
 				EC05938F168FB8BC0023898A /* Default.png in Resources */,
 				EC059390168FB8BC0023898A /* Default@2x.png in Resources */,
+				EC263BAD1692476F00B7000D /* README.md in Resources */,
+				EC263BB216924B1B00B7000D /* corner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,11 +363,16 @@
 			files = (
 				EC9192961688D9FA00CDD975 /* main.m in Sources */,
 				EC91929A1688D9FA00CDD975 /* CurvedAppDelegate.m in Sources */,
-				EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */,
+				EC503583168CE9F0008F7120 /* ImagePickerViewController.m in Sources */,
 				ECE2194E168D441400988388 /* ShippingInformationViewController.m in Sources */,
 				30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */,
 				308BC69D168F394600BBE793 /* CheckoutViewController.m in Sources */,
 				308BC6A1168F396700BBE793 /* GraciasViewController.m in Sources */,
+				EC263B8A1691476E00B7000D /* NLImageCropperView.m in Sources */,
+				EC263B8C1691476E00B7000D /* NLCropViewLayer.m in Sources */,
+				EC263BAE1692476F00B7000D /* UIImage+Alpha.m in Sources */,
+				EC263BAF1692476F00B7000D /* UIImage+Resize.m in Sources */,
+				EC263BB01692476F00B7000D /* UIImage+RoundedCorner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

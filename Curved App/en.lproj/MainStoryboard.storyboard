@@ -52,23 +52,26 @@
             </objects>
             <point key="canvasLocation" x="617" y="-83"/>
         </scene>
-        <!--Panorama Frame View Controller - Crop-->
+        <!--Image Picker View Controller - Crop Panorama To Card Size-->
         <scene sceneID="ycF-fX-Qkv">
             <objects>
-                <viewController id="rjm-a1-gsG" customClass="PanoramaFrameViewController" sceneMemberID="viewController">
+                <viewController id="rjm-a1-gsG" customClass="ImagePickerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W0g-aX-B4I">
                         <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Crop" id="hZU-Ih-3ax">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="3fY-ex-gvC">
+                    <navigationItem key="navigationItem" title="Crop Panorama To Card Size" id="hZU-Ih-3ax">
+                        <barButtonItem key="rightBarButtonItem" title="Tweak Image" id="3fY-ex-gvC">
                             <connections>
-                                <segue destination="onh-Qc-yWD" kind="push" id="AD9-03-cgQ"/>
+                                <action selector="tweakImage:" destination="rjm-a1-gsG" id="Ees-rk-a5D"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="Brf-zs-LRP" kind="push" id="9i8-3k-8ec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0C-fU-zJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,10 +114,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="xLn-IP-EyZ" secondAttribute="bottom" constant="76" id="5nd-OW-E1S"/>
-                            <constraint firstItem="xLn-IP-EyZ" firstAttribute="centerX" secondItem="kBe-62-PTs" secondAttribute="centerX" type="default" id="NCd-4B-0U2"/>
+                            <constraint firstAttribute="bottom" secondItem="xLn-IP-EyZ" secondAttribute="bottom" constant="77" id="6a8-1V-hlR"/>
                             <constraint firstItem="xLn-IP-EyZ" firstAttribute="centerX" secondItem="v75-x7-GFU" secondAttribute="centerX" type="default" id="SJp-Vq-w4O"/>
-                            <constraint firstItem="v75-x7-GFU" firstAttribute="top" secondItem="kBe-62-PTs" secondAttribute="top" constant="75" id="YgA-eu-3m4"/>
+                            <constraint firstItem="v75-x7-GFU" firstAttribute="top" secondItem="kBe-62-PTs" secondAttribute="top" constant="74" id="cEr-1d-oCR"/>
+                            <constraint firstItem="v75-x7-GFU" firstAttribute="centerX" secondItem="kBe-62-PTs" secondAttribute="centerX" type="default" id="foe-q4-PDh"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -233,7 +236,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lfE-Yz-6hi" firstAttribute="top" secondItem="0QX-by-ESV" secondAttribute="top" constant="117" id="NDt-hg-22A"/>
+                            <constraint firstItem="lfE-Yz-6hi" firstAttribute="top" secondItem="0QX-by-ESV" secondAttribute="top" constant="116" id="n0o-pc-OLq"/>
                             <constraint firstItem="lfE-Yz-6hi" firstAttribute="centerX" secondItem="0QX-by-ESV" secondAttribute="centerX" type="default" id="qXK-cj-TKY"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -270,8 +273,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Nid-fN-CCD" firstAttribute="top" secondItem="NAI-Co-V5B" secondAttribute="top" constant="106" id="Abi-0B-Mr3"/>
                             <constraint firstItem="Nid-fN-CCD" firstAttribute="centerX" secondItem="NAI-Co-V5B" secondAttribute="centerX" type="default" id="JFf-8L-hT3"/>
+                            <constraint firstItem="Nid-fN-CCD" firstAttribute="top" secondItem="NAI-Co-V5B" secondAttribute="top" constant="105" id="N7B-wR-ond"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -281,33 +284,11 @@
             </objects>
             <point key="canvasLocation" x="4211" y="169"/>
         </scene>
-        <!--View Controller - Customize Photo-->
-        <scene sceneID="eaG-ca-Dtg">
-            <objects>
-                <viewController id="onh-Qc-yWD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="411-fT-KBr">
-                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Customize Photo" id="ydq-Te-ZPC">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="jql-3I-DKR">
-                            <connections>
-                                <segue destination="Brf-zs-LRP" kind="push" id="XC3-SS-OM4"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X8v-lG-L8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1590" y="406"/>
-        </scene>
         <!--Shipping Information View Controller - Personalize-->
         <scene sceneID="ppC-Ov-hBA">
             <objects>
                 <viewController id="Brf-zs-LRP" customClass="ShippingInformationViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Acd-uM-hQa" customClass="S">
+                    <view key="view" contentMode="scaleToFill" id="Acd-uM-hQa">
                         <rect key="frame" x="0.0" y="64" width="568" height="256"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -329,7 +310,8 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUL-xg-HeU">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="RXW-Az-o7b"/>
+                                    <constraint firstAttribute="width" constant="8" id="DEV-7d-c4X"/>
+                                    <constraint firstAttribute="height" constant="24" id="TYM-aI-e4U"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBl-EL-and">
@@ -376,25 +358,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="j7M-sM-4g9" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="2Ak-eU-ljq"/>
+                            <constraint firstItem="j7M-sM-4g9" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="19" id="4Xx-Rw-Oa8"/>
                             <constraint firstItem="AYq-sC-Vhv" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="298" type="user" id="5iS-xp-nen"/>
                             <constraint firstItem="Qmw-Rr-XZc" firstAttribute="leading" secondItem="AYq-sC-Vhv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="6Rn-z6-7zg"/>
-                            <constraint firstItem="7ck-f3-0nh" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="7Fe-SW-cuu"/>
-                            <constraint firstItem="AYq-sC-Vhv" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="50" id="8jU-9Q-uOK"/>
                             <constraint firstItem="gBl-EL-and" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="312" type="user" id="E92-Bm-Lhw"/>
+                            <constraint firstItem="Qmw-Rr-XZc" firstAttribute="top" secondItem="7ck-f3-0nh" secondAttribute="top" type="default" id="JDq-Nt-kcJ"/>
                             <constraint firstItem="tSr-Dt-t7c" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="298" type="user" id="L6t-4N-Spu"/>
                             <constraint firstItem="Qmw-Rr-XZc" firstAttribute="leading" secondItem="tSr-Dt-t7c" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="O1g-pm-aC8"/>
+                            <constraint firstItem="j7M-sM-4g9" firstAttribute="top" secondItem="7ck-f3-0nh" secondAttribute="top" type="default" id="VWG-2i-QLK"/>
                             <constraint firstItem="tSr-Dt-t7c" firstAttribute="leading" secondItem="7ck-f3-0nh" secondAttribute="leading" type="user" id="WWe-VG-6tK"/>
                             <constraint firstItem="AYq-sC-Vhv" firstAttribute="leading" secondItem="tSr-Dt-t7c" secondAttribute="leading" type="user" id="YOv-uR-5qw"/>
-                            <constraint firstItem="bUL-xg-HeU" firstAttribute="bottom" secondItem="j7M-sM-4g9" secondAttribute="bottom" type="default" id="aiu-hN-xsj"/>
-                            <constraint firstAttribute="trailing" secondItem="bUL-xg-HeU" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="b4d-dd-yz0"/>
                             <constraint firstItem="Qmw-Rr-XZc" firstAttribute="leading" secondItem="7ck-f3-0nh" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="dnk-LO-jpK"/>
-                            <constraint firstItem="gBl-EL-and" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="100" id="fJB-Sd-rPN"/>
+                            <constraint firstItem="AYq-sC-Vhv" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="49" id="dq5-Jh-sc6"/>
                             <constraint firstItem="bUL-xg-HeU" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="293" type="user" id="hQ5-RJ-aFZ"/>
-                            <constraint firstItem="Qmw-Rr-XZc" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="i8S-yg-97J"/>
                             <constraint firstItem="j7M-sM-4g9" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kCU-tz-j2l"/>
                             <constraint firstItem="7ck-f3-0nh" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="298" type="user" id="nJp-BT-ddj"/>
                             <constraint firstItem="tSr-Dt-t7c" firstAttribute="centerY" secondItem="Qmw-Rr-XZc" secondAttribute="centerY" type="default" id="nj3-Ex-D0G"/>
+                            <constraint firstItem="gBl-EL-and" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="99" id="ul1-6E-k5Q"/>
+                            <constraint firstItem="bUL-xg-HeU" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="210" id="x9x-D9-AeR"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -413,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14S-tE-6oQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2239" y="-83"/>
+            <point key="canvasLocation" x="2053" y="-335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iul-IA-Nae">
