@@ -10,9 +10,12 @@
 
 @interface MainMenuViewController ()
 
+
 @end
 
 @implementation MainMenuViewController
+
+@synthesize croppedImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.imagePicker = [[GKImagePicker alloc] init];
+
 	// Do any additional setup after loading the view.
 }
 
@@ -35,4 +40,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startNewPanorama:(id)sender
+{
+    
+    self.imagePicker.cropSize = CGSizeMake(320, 90);
+    self.imagePicker.delegate = self;
+    
+    [self presentViewController:self.imagePicker.imagePickerController animated:YES completion:nil];
+    
+}
+- (void)imagePicker:(GKImagePicker *)imagePicker pickedImage:(UIImage *)image
+{
+    [self setCroppedImage:image];
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self performSegueWithIdentifier:@"editImage" sender:self];        
+    }];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"editImage"])
+    {
+        PanoramaFrameViewController *editViewController = [segue destinationViewController];
+        [editViewController setCroppedImage:croppedImage];
+    }
+}
 @end

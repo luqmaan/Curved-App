@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GKImagePicker.h>
+#import "PanoramaFrameViewController.h"
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : UIViewController  <GKImagePickerDelegate>
+
+@property GKImagePicker *imagePicker;
+@property UIImage *croppedImage;
+
+- (IBAction)startNewPanorama:(id)sender;
+
+- (void)imagePicker:(GKImagePicker *)imagePicker pickedImage:(UIImage *)image;
 
 @end

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   type = "1"
+   type = "0"
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Curved App/PanoramaFrameViewController.h"
-         timestampString = "378750982.182724"
+         filePath = "Curved App/MainMenuViewController.m"
+         timestampString = "378751170.708341"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
-         landmarkName = "-photoEditor:finishedWithImage:"
-         landmarkType = "4">
+         startingLineNumber = "68"
+         endingLineNumber = "68"
+         landmarkName = "@implementation MainMenuViewController"
+         landmarkType = "3">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

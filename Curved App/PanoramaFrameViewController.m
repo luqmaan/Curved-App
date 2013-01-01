@@ -14,6 +14,9 @@
 
 @implementation PanoramaFrameViewController
 
+@synthesize croppedImage;
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,9 +30,11 @@
 {
     NSLog(@"PanoramaFrameViewController didLoad");
     
-    [self openImagePicker];
-    
     [super viewDidLoad];
+
+    
+    [self presentPhotoEditorWithImage:croppedImage];
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -37,41 +42,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)openImagePicker
-{
-    
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    
-    [imagePicker setSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
-    
-    [imagePicker setDelegate:self];
-    
-    [self presentViewController:imagePicker
-                       animated:YES
-                     completion:nil];
-    
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    [self dismissViewControllerAnimated:YES completion:^{
-        UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-        
-        
-        [self displayEditorForImage:image];
-        
-    }];
-    
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    [self dismissViewControllerAnimated:YES completion:^
-    {
-        [[self navigationController] popViewControllerAnimated:YES];
-    }];
 }
 
 - (IBAction)changeFrameColor:(UISegmentedControl *)segment {
@@ -99,7 +69,7 @@
 
 
 
-- (void)displayEditorForImage:(UIImage *)imageToEdit
+- (void)presentPhotoEditorWithImage:(UIImage *)imageToEdit
 {
     
     /*  Set the options for the Aviary editor
@@ -125,7 +95,7 @@
     // misc colors
     UIColor *canvasColor = [UIColor whiteColor];
     UIColor *accentColor = [UIColor colorWithRed:0.506 green:0.733 blue:0.098 alpha:1];
-    
+        
     // navbar colors
     UIColor *navBarColor = [UIColor whiteColor];
     UIColor *navBarTextColor = [UIColor colorWithRed:0.220 green:0.220 blue:0.220 alpha:1];
@@ -173,7 +143,7 @@
 - (void)photoEditorCanceled:(AFPhotoEditorController *)editor
 {
     [self dismissViewControllerAnimated:YES completion:^{
-        [self openImagePicker];
+//        [self openImagePicker];
     }];
     // Handle cancelation here
 }

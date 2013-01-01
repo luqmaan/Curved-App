@@ -9,15 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "AFPhotoEditorController.h"
 
-@interface PanoramaFrameViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, AFPhotoEditorControllerDelegate>
+
+@interface PanoramaFrameViewController : UIViewController <AFPhotoEditorControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) UIImage *croppedImage;
 
 - (IBAction)changeFrameColor:(id)sender;
 
-// UIImagePicker
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker;
+- (void)presentPhotoEditorWithImage:(UIImage *)imageToEdit;
 
 // Aviary
 - (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image;

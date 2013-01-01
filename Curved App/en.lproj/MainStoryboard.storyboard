@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M2c-Om-sxI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M2c-Om-sxI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -22,7 +22,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rjm-a1-gsG" kind="push" identifier="choosePanorama" id="Bpr-r3-Z0h"/>
+                                    <action selector="startNewPanorama:" destination="2" eventType="touchUpInside" id="Po3-9G-ryz"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" text="Make the background a preview of the product - black BG with transparent PNG of the product. " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ypO-Yb-6XA">
@@ -37,16 +37,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ypO-Yb-6XA" firstAttribute="top" secondItem="3" secondAttribute="top" constant="67" id="7ml-fP-fNc"/>
                             <constraint firstAttribute="bottom" secondItem="aPY-3j-6qb" secondAttribute="bottom" constant="39" id="CgC-QO-Lob"/>
-                            <constraint firstItem="ypO-Yb-6XA" firstAttribute="top" secondItem="3" secondAttribute="top" constant="67" id="GmL-IU-ejE"/>
-                            <constraint firstItem="ypO-Yb-6XA" firstAttribute="centerX" secondItem="aPY-3j-6qb" secondAttribute="centerX" type="default" id="k3u-CA-kid"/>
-                            <constraint firstItem="ypO-Yb-6XA" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="oc5-Pr-xAq"/>
+                            <constraint firstItem="ypO-Yb-6XA" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="OFi-VZ-3JH"/>
+                            <constraint firstItem="ypO-Yb-6XA" firstAttribute="centerX" secondItem="aPY-3j-6qb" secondAttribute="centerX" type="default" id="g5S-sw-mFI"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Curved" id="j7T-5u-aZM">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="0rb-oJ-MAr"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="rjm-a1-gsG" kind="custom" identifier="editImage" id="JKP-sJ-YdA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +60,7 @@
             <objects>
                 <viewController id="rjm-a1-gsG" customClass="PanoramaFrameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W0g-aX-B4I">
-                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixl-c8-gBb">
@@ -117,7 +120,7 @@
             <objects>
                 <viewController id="A8V-TN-Msm" customClass="CheckoutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBe-62-PTs">
-                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v75-x7-GFU">
@@ -194,7 +197,7 @@
                                 </view>
                                 <constraints>
                                     <constraint firstItem="boj-nw-MaJ" firstAttribute="top" secondItem="vuT-VM-GIo" secondAttribute="top" constant="15" id="AXV-eu-h3Q"/>
-                                    <constraint firstItem="boj-nw-MaJ" firstAttribute="centerX" secondItem="vuT-VM-GIo" secondAttribute="centerX" type="default" id="JfC-Dy-WqM"/>
+                                    <constraint firstItem="boj-nw-MaJ" firstAttribute="leading" secondItem="vuT-VM-GIo" secondAttribute="leading" constant="198" id="Ef3-LD-tLb"/>
                                 </constraints>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="existingCell" id="A46-Lg-MIv">
@@ -239,7 +242,7 @@
                                     <constraint firstItem="PSU-Rq-GfL" firstAttribute="top" secondItem="A46-Lg-MIv" secondAttribute="top" constant="7" id="KME-kK-p7z"/>
                                     <constraint firstItem="PSU-Rq-GfL" firstAttribute="leading" secondItem="A46-Lg-MIv" secondAttribute="leading" constant="30" id="Q5K-Ed-Ghh"/>
                                     <constraint firstItem="gts-8e-rsO" firstAttribute="top" secondItem="PSU-Rq-GfL" secondAttribute="top" type="default" id="Xmc-MN-jGv"/>
-                                    <constraint firstAttribute="trailing" secondItem="gts-8e-rsO" secondAttribute="trailing" constant="21" id="YGW-9l-G2s"/>
+                                    <constraint firstItem="gts-8e-rsO" firstAttribute="leading" secondItem="A46-Lg-MIv" secondAttribute="leading" constant="310" id="ald-51-vV9"/>
                                     <constraint firstItem="Eho-gv-2J3" firstAttribute="bottom" secondItem="PSU-Rq-GfL" secondAttribute="bottom" type="default" id="nqF-m0-GT0"/>
                                 </constraints>
                             </tableViewCell>
@@ -260,7 +263,7 @@
             <objects>
                 <viewController id="zNV-nq-MpO" customClass="GraciasViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0QX-by-ESV">
-                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thanks!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfE-Yz-6hi">
@@ -289,7 +292,7 @@
             <objects>
                 <viewController id="zmy-85-Waw" customClass="NewCardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NAI-Co-V5B">
-                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nid-fN-CCD">
@@ -324,7 +327,7 @@
             <objects>
                 <viewController id="Brf-zs-LRP" customClass="ShippingInformationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Acd-uM-hQa" customClass="S">
-                        <rect key="frame" x="0.0" y="64" width="568" height="256"/>
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7M-sM-4g9">
@@ -404,10 +407,8 @@
                             <constraint firstItem="AYq-sC-Vhv" firstAttribute="leading" secondItem="tSr-Dt-t7c" secondAttribute="leading" type="user" id="YOv-uR-5qw"/>
                             <constraint firstItem="bUL-xg-HeU" firstAttribute="bottom" secondItem="j7M-sM-4g9" secondAttribute="bottom" type="default" id="aiu-hN-xsj"/>
                             <constraint firstAttribute="trailing" secondItem="bUL-xg-HeU" secondAttribute="trailing" constant="20" symbolic="YES" type="user" id="b4d-dd-yz0"/>
-                            <constraint firstItem="gBl-EL-and" firstAttribute="centerX" secondItem="bUL-xg-HeU" secondAttribute="centerX" type="user" id="cQI-w7-emM"/>
                             <constraint firstItem="Qmw-Rr-XZc" firstAttribute="leading" secondItem="7ck-f3-0nh" secondAttribute="trailing" constant="8" symbolic="YES" type="user" id="dnk-LO-jpK"/>
                             <constraint firstItem="gBl-EL-and" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="100" id="fJB-Sd-rPN"/>
-                            <constraint firstAttribute="trailing" secondItem="gBl-EL-and" secondAttribute="trailing" constant="39" type="user" id="gQT-ng-xFC"/>
                             <constraint firstItem="bUL-xg-HeU" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="293" type="user" id="hQ5-RJ-aFZ"/>
                             <constraint firstItem="Qmw-Rr-XZc" firstAttribute="top" secondItem="Acd-uM-hQa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="i8S-yg-97J"/>
                             <constraint firstItem="j7M-sM-4g9" firstAttribute="leading" secondItem="Acd-uM-hQa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kCU-tz-j2l"/>
@@ -453,41 +454,6 @@
             <point key="canvasLocation" x="-65" y="-83"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CheckoutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CheckoutViewController.h"/>
-        </class>
-        <class className="ContactsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactsViewController.h"/>
-        </class>
-        <class className="GraciasViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GraciasViewController.h"/>
-        </class>
-        <class className="MainMenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="NewCardViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewCardViewController.h"/>
-        </class>
-        <class className="PanoramaFrameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PanoramaFrameViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changeFrameColor:"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="ShippingInformationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShippingInformationViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="toTapped:"/>
-                <relationship kind="outlet" name="messageTxt" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="toBtn" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
