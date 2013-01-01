@@ -1,0 +1,11 @@
+
+SPEC CHECKSUMS: 
+  GKImagePicker: 13af9b1977902e06aa4fbe06abbb87be8e941ecf
+
+DEPENDENCIES: 
+- GKImagePicker
+
+COCOAPODS: 0.16.0
+
+PODS: 
+- GKImagePicker (0.0.1)
