@@ -1,705 +1,288 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0C0598798E014F9B97B5479F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8378D0E551AB42B9B168C51C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>0E13747B86044A069AFA47F7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F121470A95914DBE92D65F52</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>108E711445FD4998B1C07385</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8DBA399BFF55471393D3052A</string>
-				<string>6DCEEFD2B2EF41A49B4B4AC5</string>
-				<string>F121470A95914DBE92D65F52</string>
-				<string>5B1786A1390549638026B1A9</string>
-				<string>4AAD981E94E34F6A9BBB3A02</string>
-				<string>7FE6529234854508A6F8AB9A</string>
-				<string>AD7171C86B0B4CA3B0DAF6CD</string>
-				<string>7FF185CB6FFB43DDA3002DAE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GKImagePicker</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>113F3796896D4F0E991E3E2C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6DCEEFD2B2EF41A49B4B4AC5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>17189652B5EC4858877A8D5B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PodsDummy_Pods.m</string>
-			<key>path</key>
-			<string>PodsDummy_Pods.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>1A3C184E1B1441C8A2A3AE59</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AD7171C86B0B4CA3B0DAF6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>23B60DFA65944B1587FB18A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EB269B6AD1FA4062B7241DF4</string>
-				<string>6C285EEF3473414787008143</string>
-				<string>5D4C86DBC75C41538CC1B19D</string>
-				<string>644F5F00A90B44F799EDA7E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>27948A1F8BCF471692BE5C01</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2959B5C2E6E1481DA98EACC2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>GCC_WARN_INHIBIT_ALL_WARNINGS</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PODS_HEADERS_SEARCH_PATHS</key>
-				<string>${PODS_BUILD_HEADERS_SEARCH_PATHS}</string>
-				<key>PODS_ROOT</key>
-				<string>${SRCROOT}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>2959B5C2E6E1481DA98EACC2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>44642BD9099B4D3ABBEF7FF3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8DBA399BFF55471393D3052A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4AAD981E94E34F6A9BBB3A02</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>GKImageCropOverlayView.m</string>
-			<key>path</key>
-			<string>GKImagePicker/GKClasses/GKImageCropOverlayView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5B1786A1390549638026B1A9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GKImagePicker.h</string>
-			<key>path</key>
-			<string>GKImagePicker/GKClasses/GKImagePicker.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5BC402C8F90647FCBAEA8708</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods-resources.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5D4C86DBC75C41538CC1B19D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>108E711445FD4998B1C07385</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64252955F9284B1395023C2D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7FE6529234854508A6F8AB9A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>644F5F00A90B44F799EDA7E6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C0F6EC0A439C46A79003770F</string>
-				<string>17189652B5EC4858877A8D5B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66087405B68B41A182F4F272</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4AAD981E94E34F6A9BBB3A02</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>683486AABED4493299F7E115</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>44642BD9099B4D3ABBEF7FF3</string>
-				<string>113F3796896D4F0E991E3E2C</string>
-				<string>0E13747B86044A069AFA47F7</string>
-				<string>894C3597B3DB4C7F9CF581F5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6C285EEF3473414787008143</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8378D0E551AB42B9B168C51C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6DCEEFD2B2EF41A49B4B4AC5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GKImageCropView.h</string>
-			<key>path</key>
-			<string>GKImagePicker/GKClasses/GKImageCropView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>706D7AE86BC6479E8406DB5D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict/>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7FE6529234854508A6F8AB9A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>GKImageCropView.m</string>
-			<key>path</key>
-			<string>GKImagePicker/GKClasses/GKImageCropView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7FF185CB6FFB43DDA3002DAE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>GKImagePicker.m</string>
-			<key>path</key>
-			<string>GKImagePicker/GKClasses/GKImagePicker.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>81C1E405CF91440097DAE303</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2959B5C2E6E1481DA98EACC2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Pods-prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>GCC_WARN_INHIBIT_ALL_WARNINGS</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PODS_HEADERS_SEARCH_PATHS</key>
-				<string>${PODS_BUILD_HEADERS_SEARCH_PATHS}</string>
-				<key>PODS_ROOT</key>
-				<string>${SRCROOT}</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8378D0E551AB42B9B168C51C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>894C3597B3DB4C7F9CF581F5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5B1786A1390549638026B1A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8D33D236FC9147148B575D6E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>17189652B5EC4858877A8D5B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-		<key>8DBA399BFF55471393D3052A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GKImageCropOverlayView.h</string>
-			<key>path</key>
-			<string>GKImagePicker/GKClasses/GKImageCropOverlayView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>99C23BD87FC8473796E93468</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7FF185CB6FFB43DDA3002DAE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-fobjc-arc</string>
-			</dict>
-		</dict>
-		<key>9E927BB8218F4753B97227B8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>81C1E405CF91440097DAE303</string>
-				<string>27948A1F8BCF471692BE5C01</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>AD7171C86B0B4CA3B0DAF6CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>GKImageCropViewController.m</string>
-			<key>path</key>
-			<string>GKImagePicker/GKClasses/GKImageCropViewController.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>BA99C754A366417EB14278DF</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0450</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>BF91584E04D644F6A30B8E7C</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>23B60DFA65944B1587FB18A6</string>
-			<key>productRefGroup</key>
-			<string>EB269B6AD1FA4062B7241DF4</string>
-			<key>projectReferences</key>
-			<array/>
-			<key>targets</key>
-			<array>
-				<string>C1C077834FEF407892FBFB9E</string>
-			</array>
-		</dict>
-		<key>BB34D85C900A42EE9284F437</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BF91584E04D644F6A30B8E7C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>706D7AE86BC6479E8406DB5D</string>
-				<string>CB92E589C5B047CC8F4B5FFB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C0F6EC0A439C46A79003770F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5BC402C8F90647FCBAEA8708</string>
-				<string>E19865DE706A4FD3B78AA716</string>
-				<string>2959B5C2E6E1481DA98EACC2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1C077834FEF407892FBFB9E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9E927BB8218F4753B97227B8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FA35E34F47134033AD478B59</string>
-				<string>CAE1CA7CA2F844E6878FB239</string>
-				<string>683486AABED4493299F7E115</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>BB34D85C900A42EE9284F437</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>CAE1CA7CA2F844E6878FB239</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0C0598798E014F9B97B5479F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB92E589C5B047CC8F4B5FFB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict/>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E19865DE706A4FD3B78AA716</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods-prefix.pch</string>
-			<key>path</key>
-			<string>Pods-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>EB269B6AD1FA4062B7241DF4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BB34D85C900A42EE9284F437</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F121470A95914DBE92D65F52</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GKImageCropViewController.h</string>
-			<key>path</key>
-			<string>GKImagePicker/GKClasses/GKImageCropViewController.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>FA35E34F47134033AD478B59</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>66087405B68B41A182F4F272</string>
-				<string>64252955F9284B1395023C2D</string>
-				<string>1A3C184E1B1441C8A2A3AE59</string>
-				<string>99C23BD87FC8473796E93468</string>
-				<string>8D33D236FC9147148B575D6E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>BA99C754A366417EB14278DF</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0598798E014F9B97B5479F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378D0E551AB42B9B168C51C /* Foundation.framework */; };
+		0E13747B86044A069AFA47F7 /* GKImageCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F121470A95914DBE92D65F52 /* GKImageCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		113F3796896D4F0E991E3E2C /* GKImageCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DCEEFD2B2EF41A49B4B4AC5 /* GKImageCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A3C184E1B1441C8A2A3AE59 /* GKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7171C86B0B4CA3B0DAF6CD /* GKImageCropViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		44642BD9099B4D3ABBEF7FF3 /* GKImageCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBA399BFF55471393D3052A /* GKImageCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64252955F9284B1395023C2D /* GKImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6529234854508A6F8AB9A /* GKImageCropView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		66087405B68B41A182F4F272 /* GKImageCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD981E94E34F6A9BBB3A02 /* GKImageCropOverlayView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		894C3597B3DB4C7F9CF581F5 /* GKImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1786A1390549638026B1A9 /* GKImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D33D236FC9147148B575D6E /* PodsDummy_Pods.m in Sources */ = {isa = PBXBuildFile; fileRef = 17189652B5EC4858877A8D5B /* PodsDummy_Pods.m */; };
+		99C23BD87FC8473796E93468 /* GKImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF185CB6FFB43DDA3002DAE /* GKImagePicker.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17189652B5EC4858877A8D5B /* PodsDummy_Pods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PodsDummy_Pods.m; sourceTree = SOURCE_ROOT; };
+		2959B5C2E6E1481DA98EACC2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		4AAD981E94E34F6A9BBB3A02 /* GKImageCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKImageCropOverlayView.m; path = GKImagePicker/GKClasses/GKImageCropOverlayView.m; sourceTree = SOURCE_ROOT; };
+		5B1786A1390549638026B1A9 /* GKImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKImagePicker.h; path = GKImagePicker/GKClasses/GKImagePicker.h; sourceTree = SOURCE_ROOT; };
+		5BC402C8F90647FCBAEA8708 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
+		6DCEEFD2B2EF41A49B4B4AC5 /* GKImageCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKImageCropView.h; path = GKImagePicker/GKClasses/GKImageCropView.h; sourceTree = SOURCE_ROOT; };
+		7FE6529234854508A6F8AB9A /* GKImageCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKImageCropView.m; path = GKImagePicker/GKClasses/GKImageCropView.m; sourceTree = SOURCE_ROOT; };
+		7FF185CB6FFB43DDA3002DAE /* GKImagePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKImagePicker.m; path = GKImagePicker/GKClasses/GKImagePicker.m; sourceTree = SOURCE_ROOT; };
+		8378D0E551AB42B9B168C51C /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8DBA399BFF55471393D3052A /* GKImageCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKImageCropOverlayView.h; path = GKImagePicker/GKClasses/GKImageCropOverlayView.h; sourceTree = SOURCE_ROOT; };
+		AD7171C86B0B4CA3B0DAF6CD /* GKImageCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GKImageCropViewController.m; path = GKImagePicker/GKClasses/GKImageCropViewController.m; sourceTree = SOURCE_ROOT; };
+		BB34D85C900A42EE9284F437 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19865DE706A4FD3B78AA716 /* Pods-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
+		F121470A95914DBE92D65F52 /* GKImageCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKImageCropViewController.h; path = GKImagePicker/GKClasses/GKImageCropViewController.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE1CA7CA2F844E6878FB239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0598798E014F9B97B5479F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		108E711445FD4998B1C07385 /* GKImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8DBA399BFF55471393D3052A /* GKImageCropOverlayView.h */,
+				6DCEEFD2B2EF41A49B4B4AC5 /* GKImageCropView.h */,
+				F121470A95914DBE92D65F52 /* GKImageCropViewController.h */,
+				5B1786A1390549638026B1A9 /* GKImagePicker.h */,
+				4AAD981E94E34F6A9BBB3A02 /* GKImageCropOverlayView.m */,
+				7FE6529234854508A6F8AB9A /* GKImageCropView.m */,
+				AD7171C86B0B4CA3B0DAF6CD /* GKImageCropViewController.m */,
+				7FF185CB6FFB43DDA3002DAE /* GKImagePicker.m */,
+			);
+			name = GKImagePicker;
+			sourceTree = "<group>";
+		};
+		23B60DFA65944B1587FB18A6 = {
+			isa = PBXGroup;
+			children = (
+				EB269B6AD1FA4062B7241DF4 /* Products */,
+				6C285EEF3473414787008143 /* Frameworks */,
+				5D4C86DBC75C41538CC1B19D /* Pods */,
+				644F5F00A90B44F799EDA7E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		5D4C86DBC75C41538CC1B19D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				108E711445FD4998B1C07385 /* GKImagePicker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		644F5F00A90B44F799EDA7E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F6EC0A439C46A79003770F /* Pods */,
+				17189652B5EC4858877A8D5B /* PodsDummy_Pods.m */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6C285EEF3473414787008143 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8378D0E551AB42B9B168C51C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0F6EC0A439C46A79003770F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BC402C8F90647FCBAEA8708 /* Pods-resources.sh */,
+				E19865DE706A4FD3B78AA716 /* Pods-prefix.pch */,
+				2959B5C2E6E1481DA98EACC2 /* Pods.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB269B6AD1FA4062B7241DF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB34D85C900A42EE9284F437 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		683486AABED4493299F7E115 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44642BD9099B4D3ABBEF7FF3 /* GKImageCropOverlayView.h in Headers */,
+				113F3796896D4F0E991E3E2C /* GKImageCropView.h in Headers */,
+				0E13747B86044A069AFA47F7 /* GKImageCropViewController.h in Headers */,
+				894C3597B3DB4C7F9CF581F5 /* GKImagePicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C1C077834FEF407892FBFB9E /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E927BB8218F4753B97227B8 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				FA35E34F47134033AD478B59 /* Sources */,
+				CAE1CA7CA2F844E6878FB239 /* Frameworks */,
+				683486AABED4493299F7E115 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = BB34D85C900A42EE9284F437 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA99C754A366417EB14278DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = BF91584E04D644F6A30B8E7C /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 23B60DFA65944B1587FB18A6;
+			productRefGroup = EB269B6AD1FA4062B7241DF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1C077834FEF407892FBFB9E /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA35E34F47134033AD478B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66087405B68B41A182F4F272 /* GKImageCropOverlayView.m in Sources */,
+				64252955F9284B1395023C2D /* GKImageCropView.m in Sources */,
+				1A3C184E1B1441C8A2A3AE59 /* GKImageCropViewController.m in Sources */,
+				99C23BD87FC8473796E93468 /* GKImagePicker.m in Sources */,
+				8D33D236FC9147148B575D6E /* PodsDummy_Pods.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27948A1F8BCF471692BE5C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2959B5C2E6E1481DA98EACC2 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
+				PODS_ROOT = "${SRCROOT}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		706D7AE86BC6479E8406DB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		81C1E405CF91440097DAE303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2959B5C2E6E1481DA98EACC2 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_BUILD_HEADERS_SEARCH_PATHS}";
+				PODS_ROOT = "${SRCROOT}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB92E589C5B047CC8F4B5FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E927BB8218F4753B97227B8 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C1E405CF91440097DAE303 /* Release */,
+				27948A1F8BCF471692BE5C01 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF91584E04D644F6A30B8E7C /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				706D7AE86BC6479E8406DB5D /* Release */,
+				CB92E589C5B047CC8F4B5FFB /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA99C754A366417EB14278DF /* Project object */;
+}

@@ -1,20 +1,20 @@
 //
-//  PanoramaFrameViewController.m
+//  EditImageViewController.m
 //  Curved App
 //
 //  Created by Intern on 12/27/12.
 //  Copyright (c) 2012 Createch. All rights reserved.
 //
 
-#import "PanoramaFrameViewController.h"
+#import "EditImageViewController.h"
 
-@interface PanoramaFrameViewController ()
+@interface EditImageViewController ()
 
 @end
 
-@implementation PanoramaFrameViewController
+@implementation EditImageViewController
 
-@synthesize croppedImage;
+@synthesize croppedImage, editedImage;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,7 +28,7 @@
 
 - (void)viewDidLoad
 {
-    NSLog(@"PanoramaFrameViewController didLoad");
+    NSLog(@"EditImageViewController didLoad");
     
     [super viewDidLoad];
 
@@ -134,18 +134,33 @@
 
 - (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    [[self imageView] setImage:image];
     // Handle the result image here
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self setEditedImage:image];
+    [self performSegueWithIdentifier:@"previewFront" sender:self];    
 }
 
 - (void)photoEditorCanceled:(AFPhotoEditorController *)editor
 {
+    // Handle cancellation here
     [self dismissViewControllerAnimated:YES completion:^{
-//        [self openImagePicker];
+        [self performSegueWithIdentifier:@"cancelEditingImage" sender:self];
     }];
-    // Handle cancelation here
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"previewFront"])
+    {
+        PreviewFrontViewController *previewFrontViewController = [segue destinationViewController];
+        
+        NSLog(@"editedImage: %@", editedImage);
+        NSLog(@"previewFrontViewController: %@", previewFrontViewController);
+
+        [previewFrontViewController setImageViewWithImage:editedImage];
+        
+        
+    }
 }
 
 @end

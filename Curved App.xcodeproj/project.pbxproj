@@ -23,8 +23,9 @@
 		EC05938E168FB8BC0023898A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC05938B168FB8BC0023898A /* Default-568h@2x.png */; };
 		EC05938F168FB8BC0023898A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EC05938C168FB8BC0023898A /* Default.png */; };
 		EC059390168FB8BC0023898A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC05938D168FB8BC0023898A /* Default@2x.png */; };
-		EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */; };
+		EC503583168CE9F0008F7120 /* EditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC503582168CE9F0008F7120 /* EditImageViewController.m */; };
 		EC65EF9E16933AFE0090874B /* CurvedCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC65EF9D16933AFE0090874B /* CurvedCropViewController.m */; };
+		EC65EFEB16934C560090874B /* PreviewFrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC65EFEA16934C560090874B /* PreviewFrontViewController.m */; };
 		EC91928A1688D9FA00CDD975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9192891688D9FA00CDD975 /* UIKit.framework */; };
 		EC91928C1688D9FA00CDD975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928B1688D9FA00CDD975 /* Foundation.framework */; };
 		EC91928E1688D9FA00CDD975 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91928D1688D9FA00CDD975 /* CoreGraphics.framework */; };
@@ -64,10 +65,12 @@
 		EC05938B168FB8BC0023898A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EC05938C168FB8BC0023898A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EC05938D168FB8BC0023898A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramaFrameViewController.h; sourceTree = "<group>"; };
-		EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramaFrameViewController.m; sourceTree = "<group>"; };
+		EC503581168CE9F0008F7120 /* EditImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditImageViewController.h; sourceTree = "<group>"; };
+		EC503582168CE9F0008F7120 /* EditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditImageViewController.m; sourceTree = "<group>"; };
 		EC65EF9C16933AFE0090874B /* CurvedCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurvedCropViewController.h; sourceTree = "<group>"; };
 		EC65EF9D16933AFE0090874B /* CurvedCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvedCropViewController.m; sourceTree = "<group>"; };
+		EC65EFE916934C560090874B /* PreviewFrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewFrontViewController.h; sourceTree = "<group>"; };
+		EC65EFEA16934C560090874B /* PreviewFrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewFrontViewController.m; sourceTree = "<group>"; };
 		EC9192851688D9FA00CDD975 /* Curved App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Curved App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9192891688D9FA00CDD975 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC91928B1688D9FA00CDD975 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,8 +118,10 @@
 			children = (
 				30A0234A168EA00B009EC249 /* MainMenuViewController.h */,
 				30A0234B168EA00B009EC249 /* MainMenuViewController.m */,
-				EC503581168CE9F0008F7120 /* PanoramaFrameViewController.h */,
-				EC503582168CE9F0008F7120 /* PanoramaFrameViewController.m */,
+				EC503581168CE9F0008F7120 /* EditImageViewController.h */,
+				EC503582168CE9F0008F7120 /* EditImageViewController.m */,
+				EC65EFE916934C560090874B /* PreviewFrontViewController.h */,
+				EC65EFEA16934C560090874B /* PreviewFrontViewController.m */,
 				ECE2194C168D441400988388 /* ShippingInformationViewController.h */,
 				ECE2194D168D441400988388 /* ShippingInformationViewController.m */,
 				308BC69B168F394600BBE793 /* CheckoutViewController.h */,
@@ -339,12 +344,13 @@
 			files = (
 				EC9192961688D9FA00CDD975 /* main.m in Sources */,
 				EC91929A1688D9FA00CDD975 /* CurvedAppDelegate.m in Sources */,
-				EC503583168CE9F0008F7120 /* PanoramaFrameViewController.m in Sources */,
+				EC503583168CE9F0008F7120 /* EditImageViewController.m in Sources */,
 				ECE2194E168D441400988388 /* ShippingInformationViewController.m in Sources */,
 				30A0234C168EA00B009EC249 /* MainMenuViewController.m in Sources */,
 				308BC69D168F394600BBE793 /* CheckoutViewController.m in Sources */,
 				308BC6A1168F396700BBE793 /* GraciasViewController.m in Sources */,
 				EC65EF9E16933AFE0090874B /* CurvedCropViewController.m in Sources */,
+				EC65EFEB16934C560090874B /* PreviewFrontViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <GKImagePicker.h>
-#import "PanoramaFrameViewController.h"
+#import "EditImageViewController.h"
 
 @interface MainMenuViewController : UIViewController  <GKImagePickerDelegate>
 

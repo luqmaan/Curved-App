@@ -57,11 +57,12 @@
     }];
 }
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"editImage"])
     {
-        PanoramaFrameViewController *editViewController = [segue destinationViewController];
+        EditImageViewController *editViewController = [segue destinationViewController];
         [editViewController setCroppedImage:croppedImage];
     }
 }
