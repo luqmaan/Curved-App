@@ -10,9 +10,8 @@
 
 @interface PreviewFrontViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) UIImage *finalImage;
-
-- (void)setImageViewWithImage:(UIImage *)image;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) UIImage *finalImage;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end

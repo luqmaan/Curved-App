@@ -13,8 +13,8 @@
 @interface EditImageViewController : UIViewController <AFPhotoEditorControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) UIImage *croppedImage;
-@property (weak, nonatomic) UIImage *editedImage;
+@property UIImage *croppedImage;
+@property UIImage *editedImage;
 
 - (IBAction)changeFrameColor:(id)sender;
 

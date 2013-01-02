@@ -157,7 +157,7 @@
         NSLog(@"editedImage: %@", editedImage);
         NSLog(@"previewFrontViewController: %@", previewFrontViewController);
 
-        [previewFrontViewController setImageViewWithImage:editedImage];
+        [previewFrontViewController setFinalImage:editedImage];
         
         
     }
